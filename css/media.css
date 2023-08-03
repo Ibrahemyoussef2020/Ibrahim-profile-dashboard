@@ -1,0 +1,16 @@
+/*768px 995px 1200px 1400px*/
+
+@media (min-width:768px){
+    .grid-small-boxes{
+        grid-template-columns: repeat(auto-fill,minmax(var(--small-box-w),1fr));
+        gap: 20px;
+    }
+    .grid-medium-boxes{
+        grid-template-columns: repeat(auto-fill,minmax(var(--medium-box-w),1fr));
+        gap: 15px;
+    }
+    .grid-large-boxes{
+        grid-template-columns: repeat(auto-fill,minmax(var(--large-box-w),1fr));
+        gap: 10px;
+    }
+}
