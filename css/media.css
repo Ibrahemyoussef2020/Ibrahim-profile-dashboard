@@ -1,6 +1,8 @@
 /*768px 995px 1200px 1400px*/
 
 @media (min-width:768px){
+    /* components */
+
     .grid-small-boxes{
         grid-template-columns: repeat(auto-fill,minmax(var(--small-box-w),1fr));
         gap: 20px;
@@ -12,5 +14,41 @@
     .grid-large-boxes{
         grid-template-columns: repeat(auto-fill,minmax(var(--large-box-w),1fr));
         gap: 10px;
+    }
+
+    /* classes */
+
+    .sm-block-md-flex{
+        display: flex;
+    }
+
+    .sm-hide-md-block{
+        display: block;
+    }
+
+    .sm-hide-md-inline{
+        display: inline;
+    }
+
+    .sm-inline-md-hide{
+        display: none;
+    }
+
+}
+
+@media (min-width:992px){
+    .root{
+        grid-template-columns:150px 1fr;
+    }
+    .root .root__aside li span{
+        display: block;
+    }
+
+    .sm-hide-lg-inline{
+        display: inline;
+    }
+
+    .sm-inline-lg-hide{
+        display: none;
     }
 }
