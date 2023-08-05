@@ -18,6 +18,10 @@
 
     /* classes */
 
+    .sm-center{
+        text-align: start;
+    }
+
     .sm-block-md-flex{
         display: flex;
     }
@@ -34,9 +38,18 @@
         display: none;
     }
 
+    .sm-block-md-flex{
+        display: flex;
+    }
+
 }
 
 @media (min-width:992px){
+    :root{
+        --container-large-boxes-x:40px;
+        --container-medium-boxes-x:40px;
+        --container-medium-boxes-x:40px;
+    }
     .root{
         grid-template-columns:150px 1fr;
     }
