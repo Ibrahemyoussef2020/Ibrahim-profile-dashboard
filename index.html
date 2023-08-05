@@ -7,9 +7,9 @@
     <meta name="keywords" content="courses - skills - progress - Ibrahim Youssef - dashboard - portfolio - resume - cv - personal page - programming - html - css - js - javascript - react - next - sass - typescript - ts - web development - developer - web - app frontend">
     <meta name="author" content="Ibrahim Youssef">
     <!--fonts-->  
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!--styles-->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/all.min.css">
@@ -27,9 +27,9 @@
         <aside class="root__aside relative z-1">
             <h3 class="root__my-name"> 
                 <span class="sm-hide-lg-inline">Ibrahim</span>
-                <span class="sm-inline-lg-hide bold">H</span>
+                <span class="sm-inline-lg-hide fw-700">H</span>
             </h3>
-            <ul class="pl-10">
+            <ul class="pl-10 fs-14 clr-gray">
                 <li>
                     <a href="index.html" class="active">
                         <i class="fa-regular fa-chart-bar fa-fw"></i>
@@ -83,7 +83,7 @@
 
         <header class="root__header flex-center-between bg-white p-x-20 shadow">
             <div class="search-container radius-6 pl-15">
-                <input type="text" class="size-100  o-none b-none radius-inherit" placeholder="search about">
+                <input type="text" class="size-100 fs-13  o-none b-none radius-inherit" placeholder="search about">
             </div>
             <div class="bill-picture flex gap-5">
                 <i class="fa-regular fa-bell bell relative"></i>
@@ -91,6 +91,95 @@
             </div>
         </header>
 
+        <section class="root__page">
+            <h1 class="page__heading m-15 relative">Dashboard</h1> 
+            <div class="boxes-container grid-medium-boxes">
+                <article class="box welcome bg-white pb-15">
+                    <div class="welcome__cover flex js-between p-10 radius-6 relative">
+                        <div class="welcome__intro">
+                            <h2>Welcome!</h2>
+                            <p class="fs-12">Ibrahim Youssef</p>
+                        </div>
+                        <img class="welcome__cover-img" src="./images/covers/dashboard-cover.webp" alt="welcome img">
+
+                        <img class="welcome__profile-img radius-50" src="images/people/me-2.webp" alt="my profile picture">
+                    </div> 
+                    <div class="welcome__body bg-white p-10">
+                        <div class="welcome__articles flex js-between center">
+                            <article class="flex-1">
+                                <span class="block fs-15 fw-800 ">Ibrahim</span>
+                                <p class="mt-5 fs-14 fw-600 clr-gray">Frontend</p>
+                            </article>
+                            <article class="flex-1">
+                                <span class="block fs-15 fw-800 ">200</span>
+                                <p class="mt-5 fs-14 fw-600 clr-gray">Project</p>
+                            </article>
+                            <article class="flex-1">
+                                <span class="block fs-15 fw-800 ">2000</span>
+                                <p class="mt-5 fs-14 fw-600 clr-gray">Friend</p>
+                            </article>
+                        </div>
+                        <a class="btn mt-15 ml-auto mr-10 bg-facebook clr-white fs-13 fw-600 block fit-content" href="profile.html">Profile</a>
+                    </div>
+                </article>
+                <article class="box message bg-white p-10 pb-15">
+                    <h2>Quick Draft</h2>
+                    <p class="fs-14">Don't hesitate to get in touch</p>
+                    <input class="p-10 mt-15 w-100 fs-14 bg-gray b-none o-none" type="text" aria-label="title" placeholder="Title">
+                    <textarea class="p-15 mt-15 w-100 fs-14 bg-gray b-none o-none" aria-label="content" placeholder="Content..." rows="5"></textarea>
+                    <button class="btn mt-15 ml-auto mr-10 o-none b-none bg-facebook clr-white fs-13 fw-600 block fit-content" href="#">Send</button>
+                </article>
+                <article class="box targets p-10 pb-15">
+                    <h2>Yearly Target</h2>
+                    <p class="fs-14 mb-15">We have many targets for example not limited</p>
+                    
+                    <div class="target target--mony mb-15 flex">
+                        <div class="target__icon flex-center relative">
+                            <i class="fa-solid fa-dollar-sign fa-lg clr-facebook"></i>
+                        </div>
+                        <div class="target__content-progress">
+                            <div class="target__content p-5">
+                                <span class="fs-14 block mb-2">Mony</span>
+                                <span class="fs-14 fw-700 clr-light-black">$.20.000</span>
+                            </div>
+                            <div class="target__progress relative"  style="width:80%">
+                                <span class="fs-14 bg-inherit clr-white">80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="target target--projects mb-15 flex">
+                        <div class="target__icon flex-center relative">
+                            <i class="fa-solid fa-code fa-lg clr-orange"></i>
+                        </div>
+                        <div class="target__content-progress">
+                            <div class="target__content p-5">
+                                <span class="fs-14 block mb-2">Projects</span>
+                                <span class="fs-14 fw-700 clr-light-black">74</span>
+                            </div>
+                            <div class="target__progress relative"  style="width:40%">
+                                <span class="fs-14 bg-inherit clr-white">40%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="target target--team mb-15 flex">
+                        <div class="target__icon flex-center relative">
+                            <i class="fa-solid fa-user fa-lg clr-primary"></i>
+                        </div>
+                        <div class="target__content-progress">
+                            <div class="target__content p-5">
+                                <span class="fs-14 block mb-2">Team</span>
+                                <span class="fs-14 fw-700 clr-light-black">17</span>
+                            </div>
+                            <div class="target__progress relative"  style="width:75%">
+                                <span class="fs-14 bg-inherit clr-white">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
         
     </div>
     

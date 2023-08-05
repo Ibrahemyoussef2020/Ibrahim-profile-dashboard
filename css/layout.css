@@ -182,5 +182,6 @@ html::-webkit-scrollbar-thumb {
 }
 
 .box{
-    border: 1px solid #000;
+    border-radius: 6px;
+    background: var(--clr-light-100);
 }
