@@ -153,3 +153,10 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+/*************** latest-tasks *****************/
+
+.latest-tasks .complete--task h3,
+.latest-tasks .complete--task p{
+    text-decoration: line-through;
+}

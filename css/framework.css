@@ -85,7 +85,9 @@ h1,h2,h3{
     margin-top: 0;
 }
 h3{
-    font-size:14px;
+    font-size:.85rem;
+    color:var(--clr-dark-100);
+    margin-bottom:.62rem;
 }
 p{
     margin-top:5px;
@@ -116,10 +118,6 @@ p,span,ul{
 h2{
     font-size: 1.1rem;
     margin-bottom: 0;
-}
-h3{
-    color:var(--clr-dark-100);
-    margin-bottom: .75rem;
 }
 textarea{
     resize: none;
@@ -610,6 +608,10 @@ background-color:var(--clr-light-100);
     background: var(--clr-light-100);
     border: 1px solid var(--clr-light-25);
     border-radius:50%;
+}
+
+.articles p{
+    margin-top: 0;
 }
 
 .btn {
