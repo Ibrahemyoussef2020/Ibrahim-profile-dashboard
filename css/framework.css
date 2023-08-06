@@ -623,4 +623,10 @@ background-color:var(--clr-light-100);
     opacity: .7;
 }
 
+.label{
+    font-size:.80rem;
+    padding:3px 5px;
+    border-radius:7px;
+    background: var(--clr-light-25);
+}
 
