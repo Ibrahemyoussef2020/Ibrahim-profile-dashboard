@@ -146,11 +146,6 @@
     gap: 1rem 5px;
 }
 
-.article__content h3{
-    color:var(--clr-dark-100);
-    margin-bottom: .75rem;
-}
-
 .article__description{
     display: block;
     max-width: 150px;

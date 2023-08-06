@@ -110,12 +110,16 @@ a,button{
 h1,h2{
     color: var(--clr-dark-50);
 }
-h3,p,span,ul{
+p,span,ul{
     color: var(--clr-dark-25);
 }
 h2{
     font-size: 1.1rem;
     margin-bottom: 0;
+}
+h3{
+    color:var(--clr-dark-100);
+    margin-bottom: .75rem;
 }
 textarea{
     resize: none;
