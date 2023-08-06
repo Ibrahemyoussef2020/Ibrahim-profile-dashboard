@@ -635,3 +635,10 @@ background-color:var(--clr-light-100);
     background: var(--clr-light-25);
 }
 
+.ellipsis{
+    display: block;
+    max-width: 150px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
