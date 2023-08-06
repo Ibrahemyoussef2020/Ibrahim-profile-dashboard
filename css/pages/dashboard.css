@@ -127,7 +127,7 @@
 }
 .tickets__content .ticket{
     flex: 1;
-    min-width:150px;
+    min-width:130px;
     border: 1px solid #eee;
 }
 
@@ -146,17 +146,15 @@
     gap: 1rem 5px;
 }
 
-.article__description{
-    display: block;
-    max-width: 150px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
 /*************** latest-tasks *****************/
 
 .latest-tasks .complete--task h3,
 .latest-tasks .complete--task p{
     text-decoration: line-through;
+}
+
+/********************* latest upload ***********/
+
+.latest-upload img{
+    width:40px;
 }
