@@ -158,3 +158,71 @@
 .latest-upload img{
     width:40px;
 }
+
+/******************** projects progress ************/
+
+.progress__container span{
+    border-left: 2px solid var(--clr-twitter-100);
+}
+
+.progress__container span::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left:-8px;
+    transform: translateY(-50%);
+    width:15px;
+    height:15px;
+    border:2px solid var(--clr-light-100);
+    outline:2px solid var(--clr-facebook-100);
+    border-radius: 50%;
+    background: var(--clr-twitter-100);
+}
+
+.progress__container span:first-child{
+    padding-top: 0;
+}
+.progress__container span:last-child{
+    padding-bottom: 0;
+}
+
+.progress__container span:first-child::before{
+    top:9px;
+}
+.progress__container span:last-child::before{
+    bottom: -7px;
+    top: auto;
+}
+
+.progress__container span.current::before{
+    background: var(--clr-facebook-50);
+}
+.progress__container span.yet::before{
+    background: var(--clr-light-100);
+}
+
+/* rocket */
+
+.rocket{
+    position: absolute;
+    bottom:-1rem;
+    right:2.5rem;
+    max-width:150px;
+    opacity: .2;
+    animation: fired 6s linear infinite;
+}
+
+@keyframes fired{
+    0%{
+        bottom:-2rem;
+        opacity: 0;
+    }
+    50%{
+        bottom:30%;
+        opacity:.5;
+    }
+    100%{
+        bottom:50%;
+        opacity:0;
+    }
+}
