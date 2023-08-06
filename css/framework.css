@@ -125,6 +125,11 @@ textarea{
 button,.clickable{
     cursor: pointer;
 }
+hr{
+    height: 1px;
+    background: var(--clr-light-25);
+    border: none;
+}
 /********************** classes ****************/
 
 /* layout */
