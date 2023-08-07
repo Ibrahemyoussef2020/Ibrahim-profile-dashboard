@@ -204,6 +204,9 @@ hr{
 .ml-0{
     margin-left: 0;
 }
+.ml-25{
+    margin-left: 1.57rem;
+}
 .mx-auto{
     margin-left: auto;
     margin-right: auto;

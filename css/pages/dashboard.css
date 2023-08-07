@@ -212,6 +212,50 @@
     animation: fired 6s linear infinite;
 }
 
+/************************* reminders ***************/
+
+.reminder{
+    padding-left:7px;
+    border-left:2px solid #00f;
+}
+
+.reminder::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left:-26px;
+    transform: translateY(-60%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: red;
+}
+
+.reminder.facebook{
+    border-color: var(--clr-facebook-100);
+}
+.reminder.facebook::before{
+    background: var(--clr-facebook-100);
+}
+.reminder.tomato{
+    border-color: var(--clr-tomato-100);
+}
+.reminder.tomato::before{
+    background: var(--clr-tomato-100);
+}
+.reminder.primary{
+    border-color: var(--clr-primary-100);
+}
+.reminder.primary::before{
+    background: var(--clr-primary-100);
+}
+.reminder.orange{
+    border-color: var(--clr-orange-100);
+}
+.reminder.orange::before{
+    background: var(--clr-orange-100);
+}
+/************************** animation ***********/
 @keyframes fired{
     0%{
         bottom:-2rem;
@@ -226,3 +270,4 @@
         opacity:0;
     }
 }
+
