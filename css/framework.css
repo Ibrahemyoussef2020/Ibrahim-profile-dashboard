@@ -391,6 +391,9 @@ hr{
 .clr-white {
     color:var(--clr-light-100);
 }
+.clr-twitter{
+    color: var(--clr-twitter-100);
+}
 .clr-gray {
     color:var(--clr-dark-25);
 }
@@ -406,14 +409,29 @@ hr{
 .clr-orange {
     color:var(--clr-orange-100);
 }
+.bg-twitter{
+    background-color:var(--clr-twitter-100) ;
+}
+.bg-light-twitter{
+    background-color:var(--clr-twitter-50) ;
+}
 .bg-youtube {
     background-color:var(--clr-youtube-100);
+}
+.bg-light-youtube {
+    background-color:var(--clr-youtube-50);
+}
+.bg-facebook {
+    background-color:var(--clr-facebook-100);
+}
+.bg-light-facebook {
+    background-color:var(--clr-facebook-50);
 }
 .bg-primary {
     background-color:var(--clr-primary-100);
 }
-.bg-facebook {
-    background-color:var(--clr-facebook-100);
+.bg-light-primary {
+    background-color:var(--clr-primary-50);
 }
 .bg-orange {
     background-color: var(--clr-orange-100);
