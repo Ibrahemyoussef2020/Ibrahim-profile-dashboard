@@ -317,6 +317,12 @@ hr{
 .pl-25{
     padding-left:1.57rem;
 }
+.pr-7{
+    padding-right: 7px;
+}
+.pr-15{
+    padding-right:.94rem;
+}
 /* gaps */
 
 .gap-20 {
