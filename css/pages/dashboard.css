@@ -67,38 +67,16 @@
     height: 2px;
 }
 
-
-.target--mony .target__icon{
-    background: var(--clr-facebook-50);
-}
 .target--mony .target__content-progress{
     border-bottom: 2px solid var(--clr-facebook-50);  
 }
-.target--mony .target__progress{
-    background: var(--clr-facebook-100);
-}
 
-.target--projects .target__icon{
-    background: var(--clr-orange-100-50);
-}
 .target--projects .target__content-progress{
     border-bottom: 2px solid var(--clr-orange-100-50);  
-}
-.target--projects .target__progress{
-    background: var(--clr-orange-100);
-}
-
-.target--team .target__icon{
-    background: var(--clr-primary-50);
 }
 .target--team .target__content-progress{
     border-bottom: 2px solid var(--clr-primary-50);  
 }
-.target--team .target__progress{
-    background: var(--clr-primary-100);
-}
-
-
 
 .target__progress span{
     position: absolute;

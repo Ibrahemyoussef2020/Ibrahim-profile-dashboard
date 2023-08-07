@@ -36,7 +36,7 @@
     
 
     --clr-orange-100: #f59e0b;
-    --clr-orange-100-50:#fdecce;
+    --clr-orange-50:#fdecce;
     --clr-tomato-100: #f44336;
 
     /* transition */
@@ -415,6 +415,9 @@ hr{
 .clr-orange {
     color:var(--clr-orange-100);
 }
+.clr-tomato{
+    color: var(--clr-tomato-100);
+}
 .bg-twitter{
     background-color:var(--clr-twitter-100) ;
 }
@@ -442,6 +445,9 @@ hr{
 .bg-orange {
     background-color: var(--clr-orange-100);
 }
+.bg-light-orange {
+    background-color: var(--clr-orange-50);
+}
 .bg-white {
 background-color:var(--clr-light-100);
 }
@@ -456,9 +462,6 @@ background-color:var(--clr-light-100);
 }
 .bg-trans{
     background: transparent;
-}
-.clr-tomato{
-    color: var(--clr-tomato-100);
 }
 /* positions */
 
