@@ -137,7 +137,7 @@
     width:40px;
 }
 
-/******************** projects progress ************/
+/**************** last projects progress ***********/
 
 .progress__container span{
     border-left: 2px solid var(--clr-twitter-100);
@@ -174,6 +174,7 @@
 
 .progress__container span.current::before{
     background: var(--clr-facebook-50);
+    animation:station 1.2s ease-in-out infinite backwards;
 }
 .progress__container span.yet::before{
     background: var(--clr-light-100);
@@ -187,7 +188,7 @@
     right:2.5rem;
     max-width:150px;
     opacity: .2;
-    animation: fired 6s linear infinite;
+    animation: fired 1s linear infinite;
 }
 
 /************************* reminders ***************/
@@ -249,6 +250,16 @@
 }
 
 /************************** animation ***********/
+
+@keyframes station{
+    from{
+        background: var(--clr-facebook-50);
+    }
+    to{
+        background: var(--clr-facebook-100);
+    }
+}
+
 @keyframes fired{
     0%{
         bottom:-2rem;
