@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark-mode">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,5 +25,253 @@
 </head>
 <body>
     
+    <div class="root">
+        <aside class="root__aside relative z-1">
+            <h3 class="root__my-name"> 
+                <span class="sm-hide-lg-inline clr-light-black">Ibrahim</span>
+                <span class="sm-inline-lg-hide fw-700 clr-light-black">H</span>
+            </h3>
+            <ul class="pl-10 fs-14 clr-gray">
+                <li>
+                    <a href="index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="friends.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html" class="active">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <header class="root__header flex-center-between bg-white p-x-20 shadow">
+            <div class="search-container radius-6 pl-15">
+                <input type="text" class="size-100 fs-13  o-none b-none radius-inherit" placeholder="search about">
+            </div>
+            <div class="flex gap-20">
+                <div class="mode" id="app-mode">
+                    <i class="fa-solid fa-sun  sun fw-800 clr-black clickable"></i>
+                    <i class="fa-solid fa-moon moon  fw-800 clr-black clickable"></i>
+                </div>
+                <div class="bill-picture flex gap-5">
+                    <i class="fa-regular fa-bell bell relative clr-black"></i>
+                    <img src="images/people/me.webp" alt="Ibrahim image" class="me">
+                </div>
+            </div>
+        </header>
+
+        <section class="root__page">
+            <h1 class="page__heading m-25 p-10 ml-25 relative">Settings</h1> 
+            <div class="boxes-container grid-medium-boxes">
+                <article class="box bg-white p-10 pb-15">
+                    <h2>Sit Control</h2>
+                    <p class="fs-14">Control the widget theme</p>  
+
+                    <article class="flex js-between align-end p-10 radius-6">
+                        <div>
+                            <h3 class="mb-0">Website Control</h3>
+                            <p class="fs-13">Control the widget theme</p>
+                        </div>
+                        <label class="custom-toggle clickable">
+                            <input type="checkbox">
+                            <div class="switch-container relative">
+                                <span class="circle block h-100 radius-50"></span>
+                            </div>
+                        </label>
+                    </article>
+                    <div class="p-15">
+                        <textarea class="p-15 w-100 fs-14 shadow radius-6 b-ccc o-none" aria-label="content" placeholder="Content..." rows="7"></textarea> 
+                    </div>                
+                </article>
+                <article class="box bg-white p-10 pb-15 radius-6">
+                    <h2>General Info</h2>
+                    <p class="fs-14">General information about account</p>
+                    
+                    <form action="#" class="p-10">
+                        <fieldset class="m-0 b-0">
+                            <label class="fs-13 mb-0 fw-600" for="first-name">First Name</label>
+                            <input name="first-name" id="first-name" class="p-10 mt-10 w-100 fs-13 radius-6 bg-white  b-ccc o-none" type="text"  placeholder="Your First Name">
+                        </fieldset>
+                        <fieldset class="m-0 b-0">
+                            <label class="fs-13 mb-0 fw-600" for="last-name">Last Name</label>
+                            <input name="last-name" id="last-name" class="p-10 mt-10 w-100 fs-13 radius-6 bg-white  b-ccc o-none" type="text"  placeholder="Your Last Name">
+                        </fieldset>
+                        <fieldset class="m-0 b-0">
+                            <label class="fs-13 mb-0 fw-600" for="email">Email</label>
+                            <div class="flex-center-between flex-nowrap gap-5">
+                                <input id="email"name="email" class="p-10 mt-10 w-100 fs-13 radius-6 bg-light-facebook b-ccc o-none" type="email"  placeholder="Your Email">
+                                <button class="b-none o-none clr-facebook fs-14 mt-5">change</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </article>
+                <article class="box bg-white p-10 pb-15 radius-6">
+                    <h2>General Info</h2>
+                    <p class="fs-14">General information about account</p>
+
+                    <div class="flex-center-between p-10 mt-10 pb-15 align-center border-bottom">
+                        <div class="flex-1 flex">
+                            <div class="flex flex-column js-center">
+                                <h3 class="m-0 clr-light-black">Password</h3>
+                                <p class="fs-13 ellipsis">There are many features are presented in Sass</p>    
+                            </div>
+                        </div>
+                        <span class="btn ml-auto mr-10 bg-facebook clr-white fs-13 fw-600 block fit-content">Change</span>
+                    </div>
+                    <div class="flex-center-between p-10 mt-10 pb-15 align-center border-bottom">
+                        <div class="flex-1 flex">
+                            <div class="flex flex-column js-center">
+                                <h3 class="m-0 clr-light-black">Authentication</h3>
+                                <p class="fs-13 ellipsis">There are many features are presented in Sass</p>    
+                            </div>
+                        </div>
+                        <label class="custom-toggle clickable mr-10">
+                            <input type="checkbox">
+                            <div class="switch-container relative">
+                                <span class="circle block h-100 radius-50"></span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="flex-center-between p-10 mt-10 pb-15 align-center border-bottom">
+                        <div class="flex-1 flex">
+                            <div class="flex flex-column js-center">
+                                <h3 class="m-0 clr-light-black">Devices</h3>
+                                <p class="fs-13 ellipsis">There are many features are presented in Sass</p>    
+                            </div>
+                        </div>
+                        <span class="label ml-auto mr-5 pl-10 fs-13 fw-600 block fit-content">Devices</span>
+                    </div>
+                </article>
+                <article class="box security bg-white p-10 pb-15 radius-6">
+                    <h2>Security Info</h2>
+                    <p class="fs-14 mb-20">Security information about account</p>
+                    <div class="security__social-row mb-10 flex align-center radius-6">
+                        <div class="security__social h-100 flex-center p-5 p-y-2">
+                            <i class="security__social-icon fa-brands fa-twitter fa-2x clr-gray"></i>
+                        </div>
+                        <div class="flex-1 p-5 p-y-2 pl-7 h-100">
+                            <span class="content w-100 h-100 p-y-2 pl-7 fs-13 flex align-center">Twitter username</span>
+                        </div>
+                    </div>
+                    <div class="security__social-row mb-10 flex align-center radius-6">
+                        <div class="security__social h-100 flex-center p-5 p-y-2">
+                            <i class="security__social-icon fa-brands fa-facebook-f fa-2x clr-gray"></i>
+                        </div>
+                        <div class="flex-1 p-5 p-y-2 pl-7 h-100">
+                            <span class="content w-100 h-100 p-y-2 pl-7 fs-13 flex align-center">Facebook username</span>
+                        </div>
+                    </div>
+                    <div class="security__social-row mb-10 flex align-center radius-6">
+                        <div class="security__social h-100 flex-center p-5 p-y-2">
+                            <i class="security__social-icon fa-brands fa-linkedin fa-2x clr-gray"></i>
+                        </div>
+                        <div class="flex-1 p-5 p-y-2 pl-7 h-100">
+                            <span class="content w-100 h-100 p-y-2 pl-7 fs-13 flex align-center">LinkedIn username</span>
+                        </div>
+                    </div>
+                    <div class="security__social-row mb-10 flex align-center radius-6">
+                        <div class="security__social h-100 flex-center p-5 p-y-2">
+                            <i class="security__social-icon fa-brands fa-youtube fa-2x clr-gray"></i>
+                        </div>
+                        <div class="flex-1 p-5 p-y-2 pl-7 h-100">
+                            <span class="content w-100 h-100 p-y-2 pl-7 fs-13 flex align-center">Youtube username</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="box security bg-white p-10 pb-15 radius-6">
+                    <h2>Widgets Info</h2>
+                    <p class="fs-14 mb-20">Widgets information about account</p>
+
+                    <label class="mb-15 block clr-light-black fs-13 fw-500">
+                        <input type="checkbox" class="mr-5"> Quick Draft
+                    </label>
+                    <label class="mb-15 block clr-light-black fs-13 fw-500">
+                        <input type="checkbox" class="mr-5"> Yearly Target
+                    </label>
+                    <label class="mb-15 block clr-light-black fs-13 fw-500">
+                        <input type="checkbox" class="mr-5"> Tickets Statics
+                    </label>
+                    <label class="mb-15 block clr-light-black fs-13 fw-500">
+                        <input type="checkbox" class="mr-5"> Last News
+                    </label>
+                    <label class="mb-15 block clr-light-black fs-13 fw-500">
+                        <input type="checkbox" class="mr-5"> Last Tasks
+                    </label>
+                </article>
+                <article class="box security bg-white p-10 pb-15 radius-6">
+                    <h2>Control Backup Info</h2>
+                    <p class="fs-14 mb-20">Control Backup information about account</p>
+                    <label class="mb-15 block clr-light-black fs-13 fw-500">
+                        <input type="radio" name="backup-time" id="daily" class="mr-5"> Every Day
+                    </label>
+                    <label class="mb-15 block clr-light-black fs-13 fw-500">
+                        <input type="radio" name="backup-time" id="weekly" class="mr-5"> Every Week
+                    </label>
+                    <label class="mb-25 block clr-light-black fs-13 fw-500">
+                        <input type="radio" name="backup-time" id="monthly" class="mr-5"> Every Month
+                    </label>
+
+                    <hr class="block mb-15" />
+
+                    <div class="servers flex-center-between gap-5 pt-10">
+                        <div class="server b-ccc radius-6 p-15 center flex-1">
+                            <i class="fa-regular block fa-rectangle-list mb-5 clr-black"></i>
+                            <span class="block fs-13 fw-500">server 1</span>
+                        </div>
+
+                        <div class="server b-ccc radius-6 p-15 center flex-1">
+                            <i class="fa-regular block fa-rectangle-list mb-5 clr-facebook"></i>
+                            <span class="block fs-13 fw-500 clr-facebook">server 2</span>
+                        </div>
+
+                        <div class="server b-ccc radius-6 p-15 center flex-1">
+                            <i class="fa-regular block fa-rectangle-list mb-5 clr-black"></i>
+                            <span class="block fs-13 fw-500">server 3</span>
+                        </div>
+                    </div>
+
+                </article>    
+            </div>
+        </section>
+    </div> 
 </body>
 </html>

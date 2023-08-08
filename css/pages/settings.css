@@ -1,0 +1,23 @@
+.security__social-row{
+    height: 40px;
+}
+
+.security i{
+    font-size:1.6rem
+}
+
+.security__social {
+    width: 40px;
+}
+
+.security__social , .content{
+    background: var(--clr-light-15);
+    border:.5px solid var(--clr-dark-15);
+}
+
+/********************* servers *********************/
+
+.server{
+    height:70px;
+    min-width:120px;
+}

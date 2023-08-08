@@ -28,7 +28,7 @@
     --clr-dark-100:#000;
     --clr-dark-50:#333;
     --clr-dark-25:#666;
-
+    --clr-dark-15:#ccc;
 
     --clr-light-100:#fff;
     --clr-light-50:#f1f7f9;
@@ -130,7 +130,7 @@ a,button{
 h1,h2{
     color: var(--clr-dark-50);
 }
-p,blockquote,span,ul{
+p,blockquote,span,ul,label{
     color: var(--clr-dark-25);
 }
 h2{
@@ -141,7 +141,10 @@ textarea{
     resize: none;
     color: var(--clr-dark-100);
 }
-button,.clickable{
+button,
+.clickable,
+input[type='checkbox'],
+input[type='radio']{
     cursor: pointer;
     color: var(--clr-dark-100);
 }
@@ -150,6 +153,133 @@ hr{
     background: var(--clr-light-25);
     border: none;
 }
+
+
+/*************************** components **********/
+
+.grid-small-boxes{
+    width: calc(100% - var(--container-small-boxes-x));
+    margin-left:auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    justify-content: space-around;
+    gap:5px;
+}
+.grid-medium-boxes{
+    width: calc(100% - var(--container-medium-boxes-x));
+    margin-left:auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns:1fr;
+    justify-content: space-around;
+    gap: .62rem 1rem;
+}
+.grid-large-boxes{
+    width: calc(100% - var(--container-large-boxes-x));
+    margin-left:auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns:1fr;
+    justify-content: space-around;
+    gap: .62rem;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.abs-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%,-50%);
+}
+.abs-x-center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.abs-y-center{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.avatar{
+    padding: 5px;
+    background: var(--clr-light-100);
+    border: 1px solid var(--clr-light-25);
+    border-radius:50%;
+}
+
+.articles p{
+    margin-top: 0;
+}
+
+.btn {
+    padding:5px .62rem;
+    border-radius:5px;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+.label{
+    font-size:.80rem;
+    padding:3px 5px;
+    border-radius:7px;
+    background: var(--clr-light-25);
+}
+
+.ellipsis{
+    display: block;
+    max-width: 150px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.custom-toggle input{
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.switch-container{
+    width:40px;
+    height: 20px;
+    background: var(--clr-facebook-50);
+    border-radius: 15px;
+}
+
+.switch-container .circle{
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    height:15px;
+    width: 15px;
+    background: var(--clr-light-100);
+    transition: left .5s ease-in-out;
+}
+
+.custom-toggle input:checked + div{
+    background: var(--clr-facebook-100);
+}
+
+.custom-toggle input:checked + div > span{
+    left:calc(100% - 15px);
+}
+
 /********************** classes ****************/
 
 /* layout */
@@ -165,7 +295,7 @@ hr{
     width: 100%;
 }
 .h-100{
-    width: 100%;
+    height: 100%;
 }
 .fit-content{
     width: fit-content;
@@ -218,9 +348,6 @@ hr{
 .mr-0{
     margin-right: 0;
 }
-.mr-10{
-    margin-right:.62rem;
-}
 .ml-0{
     margin-left: 0;
 }
@@ -239,6 +366,9 @@ hr{
 }
 .mr-0{
     margin-right: 0;
+}
+.mr-5{
+    margin-right: 5px;
 }
 .m-15 {
     margin:.94rem;
@@ -387,11 +517,17 @@ hr{
     display: flex;
     flex-wrap: wrap;
 }
+.flex-nowrap{
+    flex-wrap: nowrap !important;
+}
 .flex-column{
     flex-direction: column;
 }
 .align-center {
     align-items: center;
+}
+.align-end{
+    align-items: flex-end;
 }
 .js-center {
     justify-content:center;
@@ -576,13 +712,13 @@ background-color:var(--clr-light-100);
 .o-none{
     outline: none;
 }
-.border-ccc {
-    border: 1px solid #ccc;
+.b-ccc {
+    border: 1px solid var(--clr-dark-15);
 }
-.border-eee {
-    border: 1px solid #eee;
+.b-eee {
+    border: 1px solid var(--clr-light-25);
 }
-.border-test{
+.b-test{
     border: 2px solid #000;
 }
 .border-bottom:not(:last-of-type){
@@ -610,97 +746,3 @@ background-color:var(--clr-light-100);
 }
 
 
-/*************************** components **********/
-
-.grid-small-boxes{
-    width: calc(100% - var(--container-small-boxes-x));
-    margin-left:auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    justify-content: space-around;
-    gap:5px;
-}
-.grid-medium-boxes{
-    width: calc(100% - var(--container-medium-boxes-x));
-    margin-left:auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns:1fr;
-    justify-content: space-around;
-    gap: .62rem 1rem;
-}
-.grid-large-boxes{
-    width: calc(100% - var(--container-large-boxes-x));
-    margin-left:auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns:1fr;
-    justify-content: space-around;
-    gap: .62rem;
-    background: red;
-}
-
-.flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.flex-center-between {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.abs-center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%,-50%);
-}
-.abs-x-center{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.abs-y-center{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.avatar{
-    padding: 5px;
-    background: var(--clr-light-100);
-    border: 1px solid var(--clr-light-25);
-    border-radius:50%;
-}
-
-.articles p{
-    margin-top: 0;
-}
-
-.btn {
-    padding:5px .62rem;
-    border-radius:5px;
-}
-
-.btn:hover{
-    opacity: .7;
-}
-
-.label{
-    font-size:.80rem;
-    padding:3px 5px;
-    border-radius:7px;
-    background: var(--clr-light-25);
-}
-
-.ellipsis{
-    display: block;
-    max-width: 150px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
