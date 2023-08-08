@@ -188,8 +188,9 @@
     right:2.5rem;
     max-width:150px;
     opacity: .2;
-    animation: fired 1s linear infinite;
+    animation: fired 5.5s linear infinite;
 }
+
 
 /************************* reminders ***************/
 
@@ -247,6 +248,61 @@
 .icon-container {
     height: 55px;
     width: 55px;
+}
+
+/************************** projects ***************/
+.projects{
+    grid-column:1 / -1;
+    max-width: 100%;
+    margin-top:50px;
+}
+.projects-table{
+    overflow-x:auto;
+}
+.projects-table table {
+    min-width:900px;
+    border-spacing: 0;
+    color: var(--clr-dark-50);
+}
+.projects-table table th {
+    padding: 5px .62rem;
+    border-top:1px solid var(--clr-light-100);
+    border-bottom:1px solid var(--clr-light-100);
+    border-left: 1px solid var(--clr-light-100);
+    font-size: 15px;
+    font-weight:800;
+    background: var(--clr-light-25);
+}
+.projects-table table th:not(:first-of-type){
+    position: relative;
+    margin-left: -15px;
+}
+.projects-table table td {
+    padding: 5px .62rem;
+    border-left: 1px solid var(--clr-light-25);
+    border-bottom: 1px solid var(--clr-light-25);
+    font-size: 13px;
+    font-weight:600;
+}
+
+.projects-table table tr th:last-child,
+.projects-table table tr td:last-child{
+    border-right: 1px solid var(--clr-light-25);
+    text-align: center;
+}
+
+.projects-table table img{
+    position: relative;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    padding: 2px;
+    border: .5px solid var(--clr-dark-25);
+    background: var(--clr-light-100);
+}
+
+.projects-table table img:not(:first-of-type){
+    margin-left: -10px;
 }
 
 /************************** animation ***********/
