@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="dark-mode">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/pages/dashboard.css">
     <link rel="stylesheet" href="./css/media.css">
+
+    <script src="./js/mode.js" defer></script>
 
     <title>Dashboard</title>
 
@@ -85,9 +87,15 @@
             <div class="search-container radius-6 pl-15">
                 <input type="text" class="size-100 fs-13  o-none b-none radius-inherit" placeholder="search about">
             </div>
-            <div class="bill-picture flex gap-5">
-                <i class="fa-regular fa-bell bell relative"></i>
-                <img src="images/people/me.webp" alt="Ibrahim image" class="me">
+            <div class="flex gap-20">
+                <div class="mode" id="app-mode">
+                    <i class="fa-solid fa-sun  sun fw-800 clr-black clickable"></i>
+                    <i class="fa-solid fa-moon moon  fw-800 clr-black clickable"></i>
+                </div>
+                <div class="bill-picture flex gap-5">
+                    <i class="fa-regular fa-bell bell relative clr-black"></i>
+                    <img src="images/people/me.webp" alt="Ibrahim image" class="me">
+                </div>
             </div>
         </header>
 

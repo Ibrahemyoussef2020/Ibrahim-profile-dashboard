@@ -59,13 +59,29 @@
 :root.dark-mode{
     --clr-light-100:#000;
     --clr-light-50:#222;
-    --clr-light-25:#888;
+    --clr-light-25:darkcyan;
 
 
     --clr-dark-100:#fff;
     --clr-dark-50:#f1f7f9;
     --clr-dark-25:#eee;
 }
+
+:root .sun{
+    display: none;
+}
+:root .moon{
+    display: inline;
+}
+
+:root.dark-mode .moon{
+    display: none;
+}
+:root.dark-mode .sun{
+    display: inline;
+}
+
+/**********************************/
 
 *,*::before,::after{
     box-sizing: border-box;
@@ -102,6 +118,7 @@ ul{
 }
 button , input:not(.outlined){
     outline: none;
+    color: var(--clr-dark-100);
 }
 a,button{
     display: inline-block;
@@ -122,9 +139,11 @@ h2{
 }
 textarea{
     resize: none;
+    color: var(--clr-dark-100);
 }
 button,.clickable{
     cursor: pointer;
+    color: var(--clr-dark-100);
 }
 hr{
     height: 1px;
@@ -271,6 +290,7 @@ hr{
 }
 
 /* paddings */
+
 .p-5{
     padding: 5px;
 }
@@ -329,6 +349,10 @@ hr{
     padding-right:.94rem;
 }
 /* gaps */
+
+.gap-5 {
+    gap:5px;
+}
 
 .gap-20 {
     gap: 1.25rem;

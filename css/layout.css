@@ -70,13 +70,12 @@ html::-webkit-scrollbar-thumb,
 }
 
 .root__aside ul{
-    box-shadow: 0 0 10px 0px #ddd;
+    box-shadow: 0 0 5px 0px var(--clr-dark-25);
 }
 
 
 .root__aside li a{
     display: flex;
-    width:calc( 100% - 5px);
     height: 100%;
     padding: 10px;
     gap:1.1rem;
@@ -126,11 +125,15 @@ html::-webkit-scrollbar-thumb,
     position: absolute;
     top:5px;
     left:10px;
+    color: var(--clr-dark-100);
 }
 
 .root__header .search-container input{
     padding-left: 25px;
+    background: var(--clr-light-100);
 }
+
+
 
 .root__header .me{
     width:25px;

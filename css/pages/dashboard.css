@@ -30,7 +30,7 @@
 
 
 .welcome__articles{
-    background: #fefefe;
+    background:var(--clr-light-50);
     border-top:.5px solid var(--clr-light-25);
     border-bottom:.5px solid var(--clr-light-25);
 }
