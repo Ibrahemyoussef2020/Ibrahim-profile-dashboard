@@ -7,7 +7,7 @@
     --container-medium-boxes-x:20px;
     --container-small-boxes-x:20px;
 
-    --small-box-w:250px;
+    --small-box-w:265px;
     --medium-box-w:300px;
     --large-box-w:350px;
 
@@ -162,7 +162,7 @@ hr{
     margin-left:auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:repeat(auto-fill,minmax(var(--small-box-w),70%));
     justify-content: space-around;
     gap:5px;
 }
@@ -491,7 +491,7 @@ hr{
 
 /* display */
 
-.blok{
+.block{
     display: block;
 }
 .sm-hide-md-block{

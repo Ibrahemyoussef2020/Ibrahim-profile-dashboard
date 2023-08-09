@@ -1,0 +1,12 @@
+.cart__profile{
+    top: -1rem;
+}
+
+.cart__profile img{
+    width:80px;
+    height:80px;
+    padding:2px;
+    background: var(--clr-light-100);
+    border-radius: 100%;
+    border: 1px solid var(--clr-dark-25);
+}
