@@ -3,10 +3,11 @@
 
     /* widths */
 
-    --container-large-boxes-x:20px;
-    --container-medium-boxes-x:20px;
-    --container-small-boxes-x:20px;
+    --container-large-boxes-x:10px;
+    --container-medium-boxes-x:10px;
+    --container-small-boxes-x:10px;
 
+    --x-small-box-w:130px;
     --small-box-w:265px;
     --medium-box-w:300px;
     --large-box-w:350px;
@@ -67,18 +68,8 @@
     --clr-dark-25:#eee;
 }
 
-:root .sun{
-    display: none;
-}
-:root .moon{
-    display: inline;
-}
-
-:root.dark-mode .moon{
-    display: none;
-}
-:root.dark-mode .sun{
-    display: inline;
+:root.dark-mode .file {
+    outline: 0.1px solid #555;
 }
 
 /**********************************/
@@ -156,13 +147,24 @@ hr{
 
 
 /*************************** components **********/
+.grid-x-small-boxes{
+    /*width: calc(100% - var(--container-small-boxes-x));*/
+    margin-left:auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(var(--x-small-box-w),1fr));
+    justify-content: space-around;
+    align-items: flex-start;
+    gap:5px;
+}
+
 
 .grid-small-boxes{
     width: calc(100% - var(--container-small-boxes-x));
     margin-left:auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns:repeat(auto-fill,minmax(var(--small-box-w),70%));
+    grid-template-columns:repeat(auto-fill,minmax(var(--small-box-w),1fr));
     justify-content: space-around;
     gap:5px;
 }
@@ -249,6 +251,13 @@ hr{
     overflow: hidden;
 }
 
+/* toggle */
+
+.custom-toggle{
+    display: flex;
+    align-self: flex-start;
+}
+
 .custom-toggle input{
     appearance: none;
     -webkit-appearance: none;
@@ -259,6 +268,7 @@ hr{
     height: 20px;
     background: var(--clr-facebook-50);
     border-radius: 15px;
+    margin-top:3px;
 }
 
 .switch-container .circle{
@@ -279,6 +289,14 @@ hr{
 .custom-toggle input:checked + div > span{
     left:calc(100% - 15px);
 }
+
+.switch-container--mode.moon{
+    background: var(--clr-facebook-100);
+}
+.switch-container--mode.moon span{
+    left:calc(100% - 15px);
+}
+
 
 /********************** classes ****************/
 
@@ -525,6 +543,9 @@ hr{
 }
 .align-center {
     align-items: center;
+}
+.align-start{
+    align-items: flex-start;
 }
 .align-end{
     align-items: flex-end;

@@ -1,6 +1,28 @@
-const root = document.getElementsByTagName('html')[0],
-        mode = document.getElementById('app-mode');
+const storageMode = localStorage.getItem('mode') || 'dark-mode';
 
-        mode.addEventListener('click' , e =>{
-            root.classList.toggle('dark-mode');
-        })
+const root = document.getElementsByTagName('html')[0],
+        toggleMode = document.querySelector('.custom-toggle-checkbox')
+
+
+        if (storageMode) {
+            root.classList.add(storageMode);
+
+            if (storageMode === 'dark-mode') {
+                toggleMode.checked = true;
+            }else{
+                toggleMode.checked = false;
+            }
+        }
+
+toggleMode.addEventListener('click' , _ =>{
+
+    root.classList.toggle('dark-mode');
+
+    if (root.classList.contains('dark-mode')) {
+        toggleMode.checked = true
+        return  localStorage.setItem('mode', 'dark-mode');
+    }
+        toggleMode.checked = false
+        localStorage.setItem('mode', 'light-mode');
+})
+
