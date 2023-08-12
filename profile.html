@@ -24,6 +24,260 @@
 
 </head>
 <body>
+
+    <div class="root">
+        <aside class="root__aside relative z-1">
+            <h3 class="root__my-name"> 
+                <span class="sm-hide-lg-inline clr-light-black">Ibrahim</span>
+                <span class="sm-inline-lg-hide fw-700 clr-light-black">H</span>
+            </h3>
+            <ul class="pl-10 fs-14 clr-gray">
+                <li>
+                    <a href="index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Board</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="active">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="friends.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <header class="root__header flex-center-between bg-white p-x-20 shadow">
+            <div class="search-container switch-container--mode radius-6 pl-15">
+                <input type="text" class="size-100 fs-13  o-none b-none radius-inherit" placeholder="search about">
+            </div>
+            <div class="bill-picture flex gap-5">
+                <i class="fa-regular fa-bell bell relative clr-black"></i>
+                <img src="images/people/me.webp" alt="Ibrahim image" class="me">
+            </div>
+        </header>
+
+        <section class="root__page">
+            <div class="header flex flex-center-between">
+                <h1 class="page__heading m-25 p-10 ml-25 relative">Profile</h1>
+                <div class="custom-toggle-component mr-10 flex gap-5 align-center clr-orange" id="app-mode">
+                    <i class="fa-solid fa-moon fw-800 p-5 mb-5 clr-black"></i>
+                    <label class="custom-toggle clickable">
+                        <input type="checkbox" class="custom-toggle-checkbox mt-5">
+                        <div class="switch-container switch-container--mode relative">
+                            <span class="circle block h-100 radius-50"></span>
+                        </div>
+                    </label>
+                    <i class="fa-solid fa-sun fw-800 p-5 mb-5 clr-black"></i>
+                </div>
+            </div> 
+
+            <div class="profile p-20">
+                <div class="profile_top radius-6 flex w-100 bg-white p-10">
+                    <div class="profile-cart mx-auto p-x-20 pt-20 pb-10 radius-6">
+                        <img class="profile__img block mx-auto radius-50 mt-15" src="images/people/me.webp" alt="Ibrahim">
+                        <span class="block center mt-10 mb-5 fs-15 fw-700 clr-black">Ibrahim Youssef</span>
+                        <p class="pb-15 fs-12 fw-400 clr-light-black center">Frontend developer</p>
+                        <div class="profile-cart__progress mx-auto radius-6">
+                            <span class="bg-facebook block h-100 radius-inherit" style="width:70%"></span>
+                        </div>
+                        <div class="profile-cart__rating center p-10">
+                            <i class="fa-solid fa-star clr-orange"></i>
+                            <i class="fa-solid fa-star clr-orange"></i>
+                            <i class="fa-solid fa-star clr-orange"></i>
+                            <i class="fa-solid fa-star clr-orange"></i>
+                            <i class="fa-solid fa-star clr-orange"></i>
+                        </div>
+                        <p class="clr-light-black fs-12 fw-600 center">550 Rating</p>
+                    </div>
+
+                    <div class="profile-informations flex-1 ml-10">
+                        <article class="profile-info p-x-20 pt-10 pb-10 grid-x-small-boxes gap-5 w-100 border-bottom">
+                            <h3 class="heading mb-10">Personal information</h3>              
     
+                                <div class="flex flex-nowrap c-gap-5">
+                                    <h4 class="fs-13 m-0 clr-light-black">Email</h4>
+                                    <span class="email clr-light-black">ibrahimYoussef95.12@gmail</span>
+                                </div>
+                                <div class="flex flex-nowrap c-gap-5">
+                                    <h4 class="fs-13 m-0 clr-light-black">Phone</h4>
+                                    <span class="fs-12 clr-light-black">01147359396</span>
+                                </div>
+                                <div class="flex flex-nowrap c-gap-5">
+                                    <h4 class="fs-13 m-0 clr-light-black">Date of birth</h4>
+                                    <span class="fs-12 clr-light-black">13-12-1995</span>
+                                </div>
+    
+                                <label class="custom-toggle clickable">
+                                    <input type="checkbox">
+                                    <div class="switch-container relative">
+                                        <span class="circle block h-100 radius-50"></span>
+                                    </div>
+                                </label>
+                        </article>
+    
+                        <article class="profile-info p-x-20 pt-10 pb-10 grid-x-small-boxes gap-5 w-100 border-bottom">
+                            <h3 class="heading mb-10">General information</h3>              
+    
+                                <div class="flex flex-nowrap c-gap-5">
+                                    <h4 class="fs-13 m-0 clr-light-black">Full name</h4>
+                                    <span class="fs-12 clr-light-black">Ibrahim Youssef</span>
+                                </div>
+                                <div class="flex flex-nowrap c-gap-5">
+                                    <h4 class="fs-13 m-0 clr-light-black">Full name</h4>
+                                    <span class="fs-12 clr-light-black">Ibrahim Youssef</span>
+                                </div>
+                                <div class="flex flex-nowrap c-gap-5">
+                                    <h4 class="fs-13 m-0 clr-light-black">Full name</h4>
+                                    <span class="fs-12 clr-light-black">Ibrahim Youssef</span>
+                                </div>
+    
+                                <label class="custom-toggle clickable">
+                                    <input type="checkbox">
+                                    <div class="switch-container relative">
+                                        <span class="circle block h-100 radius-50"></span>
+                                    </div>
+                                </label>
+                        </article>
+    
+                        <article class="profile-info p-x-20 pt-10 pb-10 grid-x-small-boxes gap-5 w-100 border-bottom">
+                            <h3 class="heading mb-10">Job information</h3>              
+    
+                                <div class="flex flex-nowrap c-gap-5">
+                                    <h4 class="fs-13 m-0 clr-light-black">Title</h4>
+                                    <span class="fs-12 clr-light-black">Frontend developer</span>
+                                </div>
+                                <div class="flex flex-nowrap c-gap-5">
+                                    <h4 class="fs-13 m-0 clr-light-black">Experience</h4>
+                                    <span class="fs-12 clr-light-black">Fresh</span>
+                                </div>
+                                <div class="flex flex-nowrap c-gap-5">
+                                    <h4 class="fs-13 m-0 clr-light-black">Skills</h4>
+                                    <span class="fs-12 clr-light-black">Many</span>
+                                </div>
+    
+                                <label class="custom-toggle clickable">
+                                    <input type="checkbox">
+                                    <div class="switch-container relative">
+                                        <span class="circle block h-100 radius-50"></span>
+                                    </div>
+                                </label>
+                        </article>
+                    </div>
+                </div>
+                <div class="profile-bottom radius-6 w-100 flex flex-wrap align-start gap-20 mt-15">
+                    <div class="skills flex-1 bg-white p-10">
+                        <h2 class="fs-15 fw-600 clr-black">My Skills</h2>
+                        <p class="mb-25 fs-13 fw-700 clr-gray">Complete skills List</p>
+                        <article class="skills__container w-100  gap-20 flex flex-wrap">
+                            <span class="label">HTML</span>
+                            <span class="label">Css</span>
+                            <span class="label">Bootstrap</span>
+                            <span class="label">Javascript</span>
+                            <span class="label">Typescript</span>
+                            <span class="label">Sass</span>                           
+                            <span class="label">MUI</span>
+                            <span class="label">React.js</span>
+                            <span class="label">Next.js</span>
+                        </article>
+                    </div>
+                    <div class="activities bg-white p-10 flex-1">
+                        <h2 class="fs-15 fw-600 clr-black">Last Activities</h2>
+                        <p class="mb-10 fs-13 fw-700 clr-gray">Some important latest activities</p>
+                        <article class="border-bottom flex-center-between">
+                            <div class="article__content flex-1 flex">
+                                <img class="radius-50 p-10" src="images/activity-1.webp" alt="store">
+                                <div class="article__intro flex flex-column js-center">
+                                    <h3 class="mb-0 fs-13">Store</h3>
+                                    <p class="ellipsis fs-13">online shopping</p>    
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block fs-13 fw-700 mb-10 center">17:30</span>
+                                <span class="block fs-12 center">Yesterday</span>
+                            </div>
+                        </article>
+                        <article class="border-bottom flex-center-between">
+                            <div class="article__content flex-1 flex">
+                                <img class="radius-50 p-10" src="images/activity-2.webp" alt="academy">
+                                <div class="article__intro flex flex-column js-center">
+                                    <h3 class="mb-0 fs-13">academy</h3>
+                                    <p class="ellipsis fs-13">Education:Technology</p>    
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block fs-13 fw-700 mb-10 center">08:01</span>
+                                <span class="block fs-12 center">Tuesday</span>
+                            </div>
+                        </article>
+                        <article class="border-bottom flex-center-between">
+                            <div class="article__content flex-1 flex">
+                                <img class="radius-50 p-10" src="images/activity-3.webp" alt="badges">
+                                <div class="article__intro flex flex-column js-center">
+                                    <h3 class="mb-0 fs-13">Badges</h3>
+                                    <p class="ellipsis fs-13">labels app</p>    
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block fs-13 fw-700 mb-10 center">13:30</span>
+                                <span class="block fs-12 center">Monday</span>
+                            </div>
+                        </article>
+                        <article class="border-bottom flex-center-between">
+                            <div class="article__content flex-1 flex">
+                                <img class="radius-50 p-10" src="images/activity-1.webp" alt="store">
+                                <div class="article__intro flex flex-column js-center">
+                                    <h3 class="mb-0 fs-13">Store</h3>
+                                    <p class="ellipsis fs-13">online shopping</p>    
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block fs-13 fw-700 mb-10 center">11:30</span>
+                                <span class="block fs-12 center">Sunday</span>
+                            </div>
+                        </article>
+                    </div>           
+                </div>
+            </div>
+        </section>  
+    </div> 
+
+
 </body>
 </html>

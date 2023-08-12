@@ -68,8 +68,8 @@
     --clr-dark-25:#eee;
 }
 
-:root.dark-mode .file {
-    outline: 0.1px solid #555;
+:root.dark-mode .file , :root.dark-mode .profile-cart {
+    outline: 0.1px solid #333;
 }
 
 /**********************************/
@@ -148,7 +148,6 @@ hr{
 
 /*************************** components **********/
 .grid-x-small-boxes{
-    /*width: calc(100% - var(--container-small-boxes-x));*/
     margin-left:auto;
     margin-right: auto;
     display: grid;
@@ -157,7 +156,10 @@ hr{
     align-items: flex-start;
     gap:5px;
 }
-
+.grid-x-small-boxes.profile-info{
+    width:100%;
+    grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+}
 
 .grid-small-boxes{
     width: calc(100% - var(--container-small-boxes-x));
@@ -369,6 +371,9 @@ hr{
 .ml-0{
     margin-left: 0;
 }
+.ml-10{
+    margin-left: 10px;
+}
 .ml-25{
     margin-left: 1.57rem;
 }
@@ -505,7 +510,12 @@ hr{
 .gap-20 {
     gap: 1.25rem;
 }
-
+.c-gap-5{
+    column-gap:5px;
+}
+.c-gap-20{
+    column-gap: 20px;
+}
 
 /* display */
 
