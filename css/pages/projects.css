@@ -1,0 +1,28 @@
+.main-projects img{
+    position: relative;
+    margin-left: -15px;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    padding: 2px;
+    border: .5px solid var(--clr-dark-25);
+    background: var(--clr-light-100);
+}
+
+.main-projects .structure{
+    text-align: end;
+}
+
+.main-projects hr{
+    width: 95%;
+}
+
+.structure__footer{
+    align-items: baseline;
+}
+
+
+.structure__progress{
+    width:25%;
+    height:4px;
+}

@@ -25,5 +25,236 @@
 </head>
 <body>
     
+    <div class="root">
+        <aside class="root__aside relative z-1">
+            <h3 class="root__my-name"> 
+                <span class="sm-hide-lg-inline clr-light-black">Ibrahim</span>
+                <span class="sm-inline-lg-hide fw-700 clr-light-black">H</span>
+            </h3>
+            <ul class="pl-10 fs-14 clr-gray">
+                <li>
+                    <a href="index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Board</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="active">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="friends.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <header class="root__header flex-center-between bg-white p-x-20 shadow">
+            <div class="search-container switch-container--mode radius-6 pl-15">
+                <input type="text" class="size-100 fs-13  o-none b-none radius-inherit" placeholder="search about">
+            </div>
+            <div class="bill-picture flex gap-5">
+                <i class="fa-regular fa-bell bell relative clr-black"></i>
+                <img src="images/people/me.webp" alt="Ibrahim image" class="me">
+            </div>
+        </header>
+
+        <section class="root__page">
+            <div class="header flex flex-center-between">
+                <h1 class="page__heading m-25 p-10 ml-25 relative">Profile</h1>
+                <div class="custom-toggle-component mr-10 flex gap-5 align-center clr-orange" id="app-mode">
+                    <i class="fa-solid fa-moon fw-800 p-5 mb-5 clr-black"></i>
+                    <label class="custom-toggle clickable">
+                        <input type="checkbox" class="custom-toggle-checkbox mt-5">
+                        <div class="switch-container switch-container--mode relative">
+                            <span class="circle block h-100 radius-50"></span>
+                        </div>
+                    </label>
+                    <i class="fa-solid fa-sun fw-800 p-5 mb-5 clr-black"></i>
+                </div>
+            </div>
+            
+            <div class="grid-medium-boxes main-projects p-10">
+                <article class="bg-white p-10 radius-6">
+                    <span class="block fit-content mr-0 ml-auto fs-13 clr-gray">15/12/2020</span>
+                    <h3 class="mb-0 fs-15 fw-600 clr-light-black">E-commerce</h3>
+                    <p class="mb-15 fs-12 fw-400 clr-gray">This project is about large online store to many goats</p>
+                    <div class="images mb-15 pl-25">
+                        <img src="images/people/1.webp" alt="mostafa">
+                        <img src="images/people/5.webp" alt="ahmed">
+                        <img src="images/people/3.webp" alt="ali">
+                        <img src="images/people/4.webp" alt="mostafa">
+                    </div>
+                    <hr class="mx-auto" />
+                    <div class="structure mb-15 mt-15">
+                        <span class="label clr-light-black">programming</span>
+                        <span class="label clr-light-black">Design</span>
+                        <span class="label clr-light-black">UX</span>
+                        <span class="label clr-light-black">Marketing</span>
+                    </div>
+                    <hr class="mx-auto" />
+                    <div class="structure__footer flex-center-between p-10">
+                        <div class="structure__progress bg-gray radius-6">
+                            <span class="block h-100 bg-primary radius-inherit" style="width:70%"></span>
+                        </div>
+                        <span class="fs-13 fw-500 clr-gray">$550</span>
+                    </div>
+                </article>
+                <article class="bg-white p-10 radius-6">
+                    <span class="block fit-content mr-0 ml-auto fs-13 clr-gray">11/12/2020</span>
+                    <h3 class="mb-0 fs-15 fw-600 clr-light-black">Temp</h3>
+                    <p class="mb-15 fs-12 fw-400 clr-gray">This project is about large online temp to many goats</p>
+                    <div class="images mb-15 pl-25">
+                        <img src="images/people/5.webp" alt="mostafa">
+                        <img src="images/people/6.webp" alt="ahmed">
+                        <img src="images/people/7.webp" alt="ali">
+                    </div>
+                    <hr class="mx-auto" />
+                    <div class="structure mb-15 mt-15">
+                        <span class="label clr-light-black">Programming</span>
+                        <span class="label clr-light-black">Design</span>
+                        <span class="label clr-light-black">Plan</span>
+                    </div>
+                    <hr class="mx-auto" />
+                    <div class="structure__footer flex-center-between p-10">
+                        <div class="structure__progress bg-gray radius-6">
+                            <span class="block h-100 bg-youtube radius-inherit" style="width:40%"></span>
+                        </div>
+                        <span class="fs-13 fw-500 clr-gray">$230</span>
+                    </div>
+                </article>
+                <article class="bg-white p-10 radius-6">
+                    <span class="block fit-content mr-0 ml-auto fs-13 clr-gray">12/11/2019</span>
+                    <h3 class="mb-0 fs-15 fw-600 clr-light-black">School</h3>
+                    <p class="mb-15 fs-12 fw-400 clr-gray">This project is about large school to students</p>
+                    <div class="images mb-15 pl-25">
+                        <img src="images/people/8.webp" alt="mostafa">
+                        <img src="images/people/9.webp" alt="ahmed">
+                        <img src="images/people/1.webp" alt="ali">
+                        <img src="images/people/3.webp" alt="ali">
+                    </div>
+                    <hr class="mx-auto" />
+                    <div class="structure mb-15 mt-15">
+                        <span class="label clr-light-black">Programming</span>
+                        <span class="label clr-light-black">Marketing</span>
+                        <span class="label clr-light-black">Plan</span>
+                    </div>
+                    <hr class="mx-auto" />
+                    <div class="structure__footer flex-center-between p-10">
+                        <div class="structure__progress bg-gray radius-6">
+                            <span class="block h-100 bg-youtube radius-inherit" style="width:30%"></span>
+                        </div>
+                        <span class="fs-13 fw-500 clr-gray">$334</span>
+                    </div>
+                </article>
+                <article class="bg-white p-10 radius-6">
+                    <span class="block fit-content mr-0 ml-auto fs-13 clr-gray">15/12/2020</span>
+                    <h3 class="mb-0 fs-15 fw-600 clr-light-black">University</h3>
+                    <p class="mb-15 fs-12 fw-400 clr-gray">This project is about large online university to learn</p>
+                    <div class="images mb-15 pl-25">
+                        <img src="images/people/9.webp" alt="mostafa">
+                        <img src="images/people/8.webp" alt="ahmed">
+                        <img src="images/people/7.webp" alt="ali">
+                        <img src="images/people/6.webp" alt="mostafa">
+                    </div>
+                    <hr class="mx-auto" />
+                    <div class="structure mb-15 mt-15">
+                        <span class="label clr-light-black">programming</span>
+                        <span class="label clr-light-black">Design</span>
+                        <span class="label clr-light-black">UX</span>
+                        <span class="label clr-light-black">Marketing</span>
+                    </div>
+                    <hr class="mx-auto" />
+                    <div class="structure__footer flex-center-between p-10">
+                        <div class="structure__progress bg-gray radius-6">
+                            <span class="block h-100 bg-primary radius-inherit" style="width:70%"></span>
+                        </div>
+                        <span class="fs-13 fw-500 clr-gray">$620</span>
+                    </div>
+                </article>
+                <article class="bg-white p-10 radius-6">
+                    <span class="block fit-content mr-0 ml-auto fs-13 clr-gray">12/11/2020</span>
+                    <h3 class="mb-0 fs-15 fw-600 clr-light-black">Hospital</h3>
+                    <p class="mb-15 fs-12 fw-400 clr-gray">This project is about large hospital  to safe people's life</p>
+                    <div class="images mb-15 pl-25">
+                        <img src="images/people/3.webp" alt="mostafa">
+                        <img src="images/people/5.webp" alt="ahmed">
+                        <img src="images/people/1.webp" alt="ali">
+                    </div>
+                    <hr class="mx-auto" />
+                    <div class="structure mb-15 mt-15">
+                        <span class="label clr-light-black">Programming</span>
+                        <span class="label clr-light-black">Design</span>
+                        <span class="label clr-light-black">Marketing</span>
+                        <span class="label clr-light-black">Ux</span>
+                    </div>
+                    <hr class="mx-auto" />
+                    <div class="structure__footer flex-center-between p-10">
+                        <div class="structure__progress bg-gray radius-6">
+                            <span class="block h-100 bg-youtube radius-inherit" style="width:30%"></span>
+                        </div>
+                        <span class="fs-13 fw-500 clr-gray">$260</span>
+                    </div>
+                </article>
+                <article class="bg-white p-10 radius-6">
+                    <span class="block fit-content mr-0 ml-auto fs-13 clr-gray">12/11/2019</span>
+                    <h3 class="mb-0 fs-15 fw-600 clr-light-black">Restorant</h3>
+                    <p class="mb-15 fs-12 fw-400 clr-gray">This project is about large restorant to provides mels</p>
+                    <div class="images mb-15 pl-25">
+                        <img src="images/people/8.webp" alt="mostafa">
+                        <img src="images/people/9.webp" alt="ahmed">
+                        <img src="images/people/1.webp" alt="ali">
+                        <img src="images/people/3.webp" alt="ali">
+                    </div>
+                    <hr class="mx-auto" />
+                    <div class="structure mb-15 mt-15">
+                        <span class="label clr-light-black">Programming</span>
+                        <span class="label clr-light-black">Marketing</span>
+                        <span class="label clr-light-black">UX</span>
+                    </div>
+                    <hr class="mx-auto" />
+                    <div class="structure__footer flex-center-between p-10">
+                        <div class="structure__progress bg-gray radius-6">
+                            <span class="block h-100 bg-primary radius-inherit" style="width:90%"></span>
+                        </div>
+                        <span class="fs-13 fw-500 clr-gray">$254</span>
+                    </div>
+                </article>
+            </div>
+        </section>    
 </body>
 </html>
