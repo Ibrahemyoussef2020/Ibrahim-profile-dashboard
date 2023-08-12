@@ -9,6 +9,10 @@
     background: var(--clr-light-100);
 }
 
+.main-projects .bg-gray{
+    background:#cccccc75;
+}
+
 .main-projects .structure{
     text-align: end;
 }
