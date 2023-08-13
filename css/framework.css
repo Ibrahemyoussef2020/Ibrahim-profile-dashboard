@@ -480,6 +480,10 @@ hr{
 }
 /* gaps */
 
+.gap-2{
+    gap: 2px;
+}
+
 .gap-5 {
     gap:5px;
 }

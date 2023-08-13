@@ -24,6 +24,391 @@
 
 </head>
 <body>
-    
+    <div class="root">
+        <aside class="root__aside relative z-1">
+            <h3 class="root__my-name"> 
+                <span class="sm-hide-lg-inline clr-light-black">Ibrahim</span>
+                <span class="sm-inline-lg-hide fw-700 clr-light-black">H</span>
+            </h3>
+            <ul class="pl-10 fs-14 clr-gray">
+                <li>
+                    <a href="index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Board</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="friends.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html" class="active">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <header class="root__header flex-center-between bg-white p-x-20 shadow">
+            <div class="search-container switch-container--mode radius-6 pl-15">
+                <input type="text" class="size-100 fs-13  o-none b-none radius-inherit" placeholder="search about">
+            </div>
+            <div class="bill-picture flex gap-5">
+                <i class="fa-regular fa-bell bell relative clr-black"></i>
+                <img src="images/people/me.webp" alt="Ibrahim image" class="me">
+            </div>
+        </header>
+
+        <section class="root__page">
+            <div class="header flex flex-center-between">
+                <h1 class="page__heading m-25 p-10 ml-25 relative">Plans</h1>
+                <div class="custom-toggle-component mr-10 flex gap-5 align-center clr-orange" id="app-mode">
+                    <i class="fa-solid fa-moon fw-800 p-5 mb-5 clr-black"></i>
+                    <label class="custom-toggle clickable">
+                        <input type="checkbox" class="custom-toggle-checkbox mt-5">
+                        <div class="switch-container switch-container--mode relative">
+                            <span class="circle block h-100 radius-50"></span>
+                        </div>
+                    </label>
+                    <i class="fa-solid fa-sun fw-800 p-5 mb-5 clr-black"></i>
+                </div>
+            </div>
+            
+            <div class="plans boxes-container grid-large-boxes">
+                <article class="plan bg-white p-10">
+                    <div class="plane__header bg-primary p-15 mb-15 radius-2">
+                        <h3 class="center fs-15 fw-600 clr-light-black">Free</h3>
+                        <span class="block center fw-600 clr-light-black"><sup>$</sup> 0,00</span>
+                    </div>
+                    <div class="plan__features">
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-2">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all lessons text</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-2">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all lessons order</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-2">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all lessons details</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-2">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all lessons summary</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-xmark clr-youtube"></i>
+                                <span class="fs-13 clr-light-black">Access all lessons date</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-xmark clr-youtube"></i>
+                                <span class="fs-13 clr-light-black">Access all payment ways</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-xmark clr-youtube"></i>
+                                <span class="fs-13 clr-light-black">Access all payment dates</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-xmark clr-youtube"></i>
+                                <span class="fs-13 clr-light-black">Access all payment ways</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-xmark clr-youtube"></i>
+                                <span class="fs-13 clr-light-black">Have a free course to one friend</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-xmark clr-youtube"></i>
+                                <span class="fs-13 clr-light-black">Have a free book as gift</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row mt-10 border-bottom flex-center-between pt-15 pb-15">
+                            <button class="bg-primary p-5 p-x-10 fs-13 fw-600 radius-6 b-none o-none">Join</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="plan bg-white p-10">
+                    <div class="plane__header bg-facebook p-15 mb-15 radius-2">
+                        <h3 class="center fs-15 fw-600 clr-light-black">Basic</h3>
+                        <span class="block center fw-600 clr-light-black"><sup>$</sup> 7,99</span>
+                    </div>
+                    <div class="plan__features">
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-2">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all lessons text</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-2">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all lessons order</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-2">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all lessons details</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-2">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all lessons summary</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all lessons date</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all payment ways</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all payment dates</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-xmark clr-youtube"></i>                                <span class="fs-13 clr-light-black">Access all payment ways</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-xmark clr-youtube"></i>                                <span class="fs-13 clr-light-black">Have a free course to one friend</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-xmark clr-youtube"></i>                                <span class="fs-13 clr-light-black">Have a free book as gift</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row mt-10 border-bottom flex-center-between pt-15 pb-15">
+                            <button class="bg-facebook p-5 p-x-10 fs-13 fw-600 radius-6 b-none o-none">Join</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="plan bg-white p-10">
+                    <div class="plane__header bg-orange p-15 mb-15 radius-2">
+                        <h3 class="center fs-15 fw-600 clr-light-black">Premium</h3>
+                        <span class="block center fw-600 clr-light-black"><sup>$</sup> 7,99</span>
+                    </div>
+                    <div class="plan__features">
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-2">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all lessons text</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-2">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all lessons order</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-2">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all lessons details</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-2">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all lessons summary</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all lessons date</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all payment ways</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>
+                                <span class="fs-13 clr-light-black">Access all payment dates</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>                                <span class="fs-13 clr-light-black">Access all payment ways</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>                               <span class="fs-13 clr-light-black">Have a free course to one friend</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row border-bottom flex-center-between ">
+                            <div class="flex gap-5">
+                                <i class="fa-solid fa-check fa-fw clr-primary"></i>                                <span class="fs-13 clr-light-black">Have a free book as gift</span>
+                            </div>
+                            <a href='' class="help-container p-5 fs-12 radius-6">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </div>
+                        <div class="plan__features_row mt-10 border-bottom flex-center-between pt-15 pb-15">
+                            <button class="bg-orange p-5 p-x-10 fs-13 fw-600 radius-6 b-none o-none">Join</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>    
+    </div>
 </body>
 </html>

@@ -1,0 +1,40 @@
+
+.plane__header{
+    border: 2px solid var(--clr-light-100);
+    outline: 2px solid var(--clr-primary-100);
+}
+
+.plane__header.bg-facebook{
+    outline-color: var(--clr-facebook-100);
+}
+.plane__header.bg-orange{
+    outline-color: var(--clr-orange-100);
+}
+
+.plane__header h3{
+    color: #fff;
+}
+.plane__header span{
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+/* plan row */
+
+.plan__features_row{
+    padding:5px;
+}
+
+
+.help-container{
+    background:#ccccccb8;
+    cursor: pointer;
+    padding:3px;
+}
+.help-container i{
+    color:var(--clr-dark-50);
+}
+
+.plan button{
+    color: #fff;
+}
