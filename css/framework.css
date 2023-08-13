@@ -163,7 +163,9 @@ hr{
     width:100%;
     grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
 }
-
+.grid-x-small-boxes.main-courses{
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+}
 .grid-small-boxes{
     width: calc(100% - var(--container-small-boxes-x));
     margin-left:auto;
