@@ -24,6 +24,321 @@
 
 </head>
 <body>
-    
+    <div class="root">
+        <aside class="root__aside relative z-1">
+            <h3 class="root__my-name"> 
+                <span class="sm-hide-lg-inline clr-light-black">Ibrahim</span>
+                <span class="sm-inline-lg-hide fw-700 clr-light-black">H</span>
+            </h3>
+            <ul class="pl-10 fs-14 clr-gray">
+                <li>
+                    <a href="index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Board</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html" class="active">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="friends.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <header class="root__header flex-center-between bg-white p-x-20 shadow">
+            <div class="search-container switch-container--mode radius-6 pl-15">
+                <input type="text" class="size-100 fs-13  o-none b-none radius-inherit" placeholder="search about">
+            </div>
+            <div class="bill-picture flex gap-5">
+                <i class="fa-regular fa-bell bell relative clr-black"></i>
+                <img src="images/people/me.webp" alt="Ibrahim image" class="me">
+            </div>
+        </header>
+
+        <section class="root__page">
+            <div class="header flex flex-center-between">
+                <h1 class="page__heading m-25 p-10 ml-25 relative">Courses</h1>
+                <div class="custom-toggle-component mr-10 flex gap-5 align-center clr-orange" id="app-mode">
+                    <i class="fa-solid fa-moon fw-800 p-5 mb-5 clr-black"></i>
+                    <label class="custom-toggle clickable">
+                        <input type="checkbox" class="custom-toggle-checkbox mt-5">
+                        <div class="switch-container switch-container--mode relative">
+                            <span class="circle block h-100 radius-50"></span>
+                        </div>
+                    </label>
+                    <i class="fa-solid fa-sun fw-800 p-5 mb-5 clr-black"></i>
+                </div>
+            </div> 
+            <div class="main-courses boxes-container r-gap-10 grid-x-small-boxes custom-x p-10">
+                <article class="bg-white radius-6 b-proportional">
+                    <div class="cover cover--1 relative">
+                        <img class="small-img radius-50 absolute bg-white b-proportional" src="images/people/3.webp" alt="mastering web design">
+                    </div>
+                    <div class="p-10">
+                        <h3 class="mt-10 mb-0 fw-700 clr-black">mastering web design</h3>
+                        <p class="fs-12 clr-gray">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit consectetur,
+                        </p>
+                        <button class="block fit-content p-5 p-x-10 mx-auto radius-6 fs-12 fw-500 clr-white bg-facebook b-none o-none relative">confirm course</button>
+                        <hr class="relative m-0 mb-10">
+                        <div class="cart-footer flex-center-between pt-10 pb-25">
+                            <div>
+                                <i class="fa-regular fa-user clr-light-black fs-14"></i>
+                                <span class="fw-500 fs-13 clr-light-black">950</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-dollar-sign clr-light-black fs-12"></i>
+                                <span class="fw-500 fs-13 clr-light-black">100</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white radius-6 b-proportional">
+                    <div class="cover cover--2 relative">
+                        <img class="small-img radius-50 absolute bg-white b-proportional" src="images/people/4.webp" alt="mastering web design">
+                    </div>
+                    <div class="p-10">
+                        <h3 class="mt-10 mb-0 fw-700 clr-black">Software design</h3>
+                        <p class="fs-12 clr-gray">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit consectetur,
+                        </p>
+                        <button class="block fit-content p-5 p-x-10 mx-auto radius-6 fs-12 fw-500 clr-white bg-facebook b-none o-none relative">confirm course</button>
+                        <hr class="relative m-0 mb-10">
+                        <div class="cart-footer flex-center-between pt-10 pb-25">
+                            <div>
+                                <i class="fa-regular fa-user clr-light-black fs-14"></i>
+                                <span class="fw-500 fs-13 clr-light-black">550</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-dollar-sign clr-light-black fs-12"></i>
+                                <span class="fw-500 fs-13 clr-light-black">600</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white radius-6 b-proportional">
+                    <div class="cover cover--3 relative">
+                        <img class="small-img radius-50 absolute bg-white b-proportional" src="images/people/5.webp" alt="mastering web design">
+                    </div>
+                    <div class="p-10">
+                        <h3 class="mt-10 mb-0 fw-700 clr-black">Design Pattern</h3>
+                        <p class="fs-12 clr-gray">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit consectetur,
+                        </p>
+                        <button class="block fit-content p-5 p-x-10 mx-auto radius-6 fs-12 fw-500 clr-white bg-facebook b-none o-none relative">confirm course</button>
+                        <hr class="relative m-0 mb-10">
+                        <div class="cart-footer flex-center-between pt-10 pb-25">
+                            <div>
+                                <i class="fa-regular fa-user clr-light-black fs-14"></i>
+                                <span class="fw-500 fs-13 clr-light-black">950</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-dollar-sign clr-light-black fs-12"></i>
+                                <span class="fw-500 fs-13 clr-light-black">100</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white radius-6 b-proportional">
+                    <div class="cover cover--4 relative">
+                        <img class="small-img radius-50 absolute bg-white b-proportional" src="images/people/6.webp" alt="mastering web design">
+                    </div>
+                    <div class="p-10">
+                        <h3 class="mt-10 mb-0 fw-700 clr-black">Data structure</h3>
+                        <p class="fs-12 clr-gray">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit consectetur,
+                        </p>
+                        <button class="block fit-content p-5 p-x-10 mx-auto radius-6 fs-12 fw-500 clr-white bg-facebook b-none o-none relative">confirm course</button>
+                        <hr class="relative m-0 mb-10">
+                        <div class="cart-footer flex-center-between pt-10 pb-25">
+                            <div>
+                                <i class="fa-regular fa-user clr-light-black fs-14"></i>
+                                <span class="fw-500 fs-13 clr-light-black">1050</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-dollar-sign clr-light-black fs-12"></i>
+                                <span class="fw-500 fs-13 clr-light-black">70</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white radius-6 b-proportional">
+                    <div class="cover cover--5 relative">
+                        <img class="small-img radius-50 absolute bg-white b-proportional" src="images/people/3.webp" alt="mastering web design">
+                    </div>
+                    <div class="p-10">
+                        <h3 class="mt-10 mb-0 fw-700 clr-black">How to search!</h3>
+                        <p class="fs-12 clr-gray">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit consectetur,
+                        </p>
+                        <button class="block fit-content p-5 p-x-10 mx-auto radius-6 fs-12 fw-500 clr-white bg-facebook b-none o-none relative">confirm course</button>
+                        <hr class="relative m-0 mb-10">
+                        <div class="cart-footer flex-center-between pt-10 pb-25">
+                            <div>
+                                <i class="fa-regular fa-user clr-light-black fs-14"></i>
+                                <span class="fw-500 fs-13 clr-light-black">200</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-dollar-sign clr-light-black fs-12"></i>
+                                <span class="fw-500 fs-13 clr-light-black">1000</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white radius-6 b-proportional">
+                    <div class="cover cover--6 relative">
+                        <img class="small-img radius-50 absolute bg-white b-proportional" src="images/people/2.webp" alt="mastering web design">
+                    </div>
+                    <div class="p-10">
+                        <h3 class="mt-10 mb-0 fw-700 clr-black">Javascript algorithm</h3>
+                        <p class="fs-12 clr-gray">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit consectetur,
+                        </p>
+                        <button class="block fit-content p-5 p-x-10 mx-auto radius-6 fs-12 fw-500 clr-white bg-facebook b-none o-none relative">confirm course</button>
+                        <hr class="relative m-0 mb-10">
+                        <div class="cart-footer flex-center-between pt-10 pb-25">
+                            <div>
+                                <i class="fa-regular fa-user clr-light-black fs-14"></i>
+                                <span class="fw-500 fs-13 clr-light-black">1010</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-dollar-sign clr-light-black fs-12"></i>
+                                <span class="fw-500 fs-13 clr-light-black">730</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white radius-6 b-proportional">
+                    <div class="cover cover--5 relative">
+                        <img class="small-img radius-50 absolute bg-white b-proportional" src="images/people/7.webp" alt="mastering web design">
+                    </div>
+                    <div class="p-10">
+                        <h3 class="mt-10 mb-0 fw-700 clr-black">Javascript OOP</h3>
+                        <p class="fs-12 clr-gray">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit consectetur,
+                        </p>
+                        <button class="block fit-content p-5 p-x-10 mx-auto radius-6 fs-12 fw-500 clr-white bg-facebook b-none o-none relative">confirm course</button>
+                        <hr class="relative m-0 mb-10">
+                        <div class="cart-footer flex-center-between pt-10 pb-25">
+                            <div>
+                                <i class="fa-regular fa-user clr-light-black fs-14"></i>
+                                <span class="fw-500 fs-13 clr-light-black">650</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-dollar-sign clr-light-black fs-12"></i>
+                                <span class="fw-500 fs-13 clr-light-black">910</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white radius-6 b-proportional">
+                    <div class="cover cover--2 relative">
+                        <img class="small-img radius-50 absolute bg-white b-proportional" src="images/people/8.webp" alt="mastering web design">
+                    </div>
+                    <div class="p-10">
+                        <h3 class="mt-10 mb-0 fw-700 clr-black">HTML 5</h3>
+                        <p class="fs-12 clr-gray">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit consectetur,
+                        </p>
+                        <button class="block fit-content p-5 p-x-10 mx-auto radius-6 fs-12 fw-500 clr-white bg-facebook b-none o-none relative">confirm course</button>
+                        <hr class="relative m-0 mb-10">
+                        <div class="cart-footer flex-center-between pt-10 pb-25">
+                            <div>
+                                <i class="fa-regular fa-user clr-light-black fs-14"></i>
+                                <span class="fw-500 fs-13 clr-light-black">900</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-dollar-sign clr-light-black fs-12"></i>
+                                <span class="fw-500 fs-13 clr-light-black">40</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white radius-6 b-proportional">
+                    <div class="cover cover--3 relative">
+                        <img class="small-img radius-50 absolute bg-white b-proportional" src="images/people/1.webp" alt="mastering web design">
+                    </div>
+                    <div class="p-10">
+                        <h3 class="mt-10 mb-0 fw-700 clr-black">Next.js 13</h3>
+                        <p class="fs-12 clr-gray">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit consectetur,
+                        </p>
+                        <button class="block fit-content p-5 p-x-10 mx-auto radius-6 fs-12 fw-500 clr-white bg-facebook b-none o-none relative">confirm course</button>
+                        <hr class="relative m-0 mb-10">
+                        <div class="cart-footer flex-center-between pt-10 pb-25">
+                            <div>
+                                <i class="fa-regular fa-user clr-light-black fs-14"></i>
+                                <span class="fw-500 fs-13 clr-light-black">120</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-dollar-sign clr-light-black fs-12"></i>
+                                <span class="fw-500 fs-13 clr-light-black">60</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-white radius-6 b-proportional">
+                    <div class="cover cover--7 relative">
+                        <img class="small-img radius-50 absolute bg-white b-proportional" src="images/people/9.webp" alt="mastering web design">
+                    </div>
+                    <div class="p-10">
+                        <h3 class="mt-10 mb-0 fw-700 clr-black">React Hook</h3>
+                        <p class="fs-12 clr-gray">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit consectetur,
+                        </p>
+                        <button class="block fit-content p-5 p-x-10 mx-auto radius-6 fs-12 fw-500 clr-white bg-facebook b-none o-none relative">confirm course</button>
+                        <hr class="relative m-0 mb-10">
+                        <div class="cart-footer flex-center-between pt-10 pb-25">
+                            <div>
+                                <i class="fa-regular fa-user clr-light-black fs-14"></i>
+                                <span class="fw-500 fs-13 clr-light-black">1550</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-dollar-sign clr-light-black fs-12"></i>
+                                <span class="fw-500 fs-13 clr-light-black">300</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>  
+    </div> 
 </body>
 </html>

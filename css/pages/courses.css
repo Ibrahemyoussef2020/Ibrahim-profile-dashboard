@@ -1,0 +1,48 @@
+.main-courses button{
+    top: 10px;
+    z-index: 2;
+}
+
+.main-courses .cover{
+    min-height: 150px;
+    background:#00f;
+    background-image:url('../../images/covers/course-1.webp');
+    background-size: cover;
+    background-position: top left;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.main-courses .cover--1{
+    background-image:url('../../images/covers/course-1.webp');
+}
+.main-courses .cover--2{
+    background-image:url('../../images/covers/course-2.webp');
+}
+.main-courses .cover--3{
+    background-image:url('../../images/covers/course-3.webp');
+}
+.main-courses .cover--4{
+    background-image:url('../../images/covers/course-4.webp');
+}
+.main-courses .cover--5{
+    background-image:url('../../images/covers/course-5.webp');
+}
+.main-courses .cover--6{
+    background-image:url('../../images/covers/2.webp');
+}
+.main-courses .cover--7{
+    background-image:url('../../images/covers/3.webp');
+}
+
+.main-courses .small-img{
+    top: 10px;
+    left: 10px;
+    width:50px;
+    height:50px;
+    padding: .5px;
+}
+
+.cart-footer{
+    opacity: .6;
+}

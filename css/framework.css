@@ -66,10 +66,13 @@
     --clr-dark-100:#fff;
     --clr-dark-50:#f1f7f9;
     --clr-dark-25:#eee;
+
+    --clr-proportional:#333;
 }
 
-:root.dark-mode .file , :root.dark-mode .profile-cart {
-    outline: 0.1px solid #333;
+:root.dark-mode button.clr-white ,
+:root.dark-mode .label.clr-white {
+    color: #fff;
 }
 
 /**********************************/
@@ -156,7 +159,7 @@ hr{
     align-items: flex-start;
     gap:5px;
 }
-.grid-x-small-boxes.profile-info{
+.grid-x-small-boxes.custom-x{
     width:100%;
     grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
 }
@@ -516,6 +519,9 @@ hr{
 .c-gap-20{
     column-gap: 20px;
 }
+.r-gap-10{
+    row-gap: 10px;
+}
 
 /* display */
 
@@ -664,7 +670,7 @@ background-color:var(--clr-light-100);
 .relative {
     position: relative;
 }
-.p-absolute {
+.absolute {
     position: absolute;
 }
 .abs-popular-left{
@@ -749,8 +755,8 @@ background-color:var(--clr-light-100);
 .b-eee {
     border: 1px solid var(--clr-light-25);
 }
-.b-test{
-    border: 2px solid #000;
+.b-proportional{
+    border: .1px solid var(--clr-proportional);
 }
 .border-bottom:not(:last-of-type){
     border-bottom: 1px solid var(--clr-light-25);
