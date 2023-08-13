@@ -14,7 +14,10 @@
 }
 
 .main-projects .structure{
-    text-align: end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 5px;
 }
 
 .main-projects hr{

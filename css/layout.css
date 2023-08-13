@@ -69,11 +69,6 @@ html::-webkit-scrollbar-thumb,
 
 }
 
-.root__aside ul{
-    box-shadow: 0 0 5px 0px var(--clr-dark-25);
-}
-
-
 .root__aside li a{
     display: flex;
     height: 100%;
@@ -189,4 +184,50 @@ html::-webkit-scrollbar-thumb,
 .box{
     border-radius: 6px;
     background: var(--clr-light-100);
+}
+
+/* start toggle */
+
+.custom-toggle{
+    display: flex;
+    align-self: flex-start;
+}
+
+.custom-toggle input{
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.switch-container{
+    width:40px;
+    height: 20px;
+    background: var(--clr-facebook-50);
+    border-radius: 15px;
+    margin-top:3px;
+}
+
+.switch-container .circle{
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    height:15px;
+    width: 15px;
+    background: var(--clr-light-100);
+    transition: left .5s ease-in-out;
+}
+
+.custom-toggle input:checked + div{
+    background: var(--clr-facebook-100);
+}
+
+.custom-toggle input:checked + div > span{
+    left:calc(100% - 15px);
+}
+
+.switch-container--mode.moon{
+    background: var(--clr-facebook-100);
+}
+.switch-container--mode.moon span{
+    left:calc(100% - 15px);
 }

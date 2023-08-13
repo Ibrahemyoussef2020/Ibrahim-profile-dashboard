@@ -5,6 +5,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center right;
+    min-height: 100px;
 }
 .welcome__cover-img{
     width:180px;
@@ -17,7 +18,7 @@
     bottom:-20px;
     left:20px;
     left:40%;
-    bottom:-30px;
+    bottom:-15px;
     transform: translateX(-50%);
     width:50px;
     height:50px;
@@ -45,6 +46,13 @@
 
 .welcome__articles span{
     letter-spacing: .5px;
+}
+
+/*********************** draft *****************/
+
+.message textarea::placeholder,
+.message input::placeholder{
+    color: var(--clr-dark-50);
 }
 
 /********************* target ***************/
