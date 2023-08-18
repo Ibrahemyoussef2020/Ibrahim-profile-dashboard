@@ -1,43 +1,27 @@
 
-.welcome__cover{
-    background: var(--clr-light-25);
-    background-image: url(../../images/covers/dashboard-cover.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center right;
-    min-height: 100px;
-}
 .welcome__cover-img{
-    width:180px;
-    height:80px;
+    max-height:110px;
     display: none;
 }
 
 .welcome__profile-img{
     position: absolute;
-    bottom:-20px;
-    left:20px;
-    left:40%;
-    bottom:-15px;
+    bottom:-32px;
+    left:50%;
     transform: translateX(-50%);
-    width:50px;
-    height:50px;
+    width:65px;
+    height:65px;
+    padding: 3px;
 }
 
 .welcome__body{
     margin-top:35px ;
-    padding: 0 5px;
 }
 
 
 .welcome__articles{
-    background:var(--clr-light-50);
     border-top:.5px solid var(--clr-light-25);
     border-bottom:.5px solid var(--clr-light-25);
-}
-
-.welcome__articles article:not(:last-child){
-    border-right: .5px solid var(--clr-light-25);
 }
 
 .welcome__articles article{
@@ -49,10 +33,12 @@
 }
 
 /*********************** draft *****************/
-
+.message textarea{
+    min-height: 180px;
+}
 .message textarea::placeholder,
 .message input::placeholder{
-    color: var(--clr-dark-50);
+    color: var(--clr-dark-25);
 }
 
 /********************* target ***************/
@@ -60,42 +46,45 @@
     align-items: flex-end;
 }
 .target__icon{
-    width:70px;
-    height:70px;
+    width:80px;
+    height:80px;
 }
 
 .target__content-progress{
-    border-bottom: 2px solid var(--clr-orange-100-50);
     flex: 1;
     max-width: 250px;
 }
 
 .target__progress {
-    top:2px;
-    height: 2px;
+    top:-3px;
+    height:4px;
+    margin-left:.94rem;
 }
 
-.target--mony .target__content-progress{
-    border-bottom: 2px solid var(--clr-facebook-50);  
+
+.target__content{
+    margin-left: .62rem;
+    padding-left: 0;
+    padding-bottom: 14px;
 }
 
-.target--projects .target__content-progress{
-    border-bottom: 2px solid var(--clr-orange-100-50);  
-}
-.target--team .target__content-progress{
-    border-bottom: 2px solid var(--clr-primary-50);  
-}
-
-.target__progress span{
+.target__progress .thumb{
     position: absolute;
-    top:-25px;
-    right:-10px;
-    padding: 2px 3px;
-    border-radius: 3px;
+    top: 0;
+    bottom: 0;
+}
+
+.target__progress .text{
+    position: absolute;
+    bottom:1rem;
+    right:-1rem;
+    padding:3px 5px;
+    border-radius:6px;
+    font-size: 13px;
     z-index: 0;
 }
 
-.target__progress span:after{
+.target__progress .text:after{
     content: '';
     position: absolute;
     bottom:-3px;
@@ -109,12 +98,13 @@
 
 /******************** dashboard **************/
 .tickets__content{
-    gap: .75rem;
+    column-gap: .75rem;
+    row-gap: 1rem;
 }
 .tickets__content .ticket{
     flex: 1;
-    min-width:130px;
-    border: 1px solid #eee;
+    min-width:150px;
+    border: .1px solid #ccc;
 }
 
 .ticket span:first-of-type{
@@ -122,14 +112,35 @@
 }
 /************************* latest news ***********/
 
-.article__content img{
+.latest-news .article__content{
+    gap: 1rem 5px;
+}
+
+.latest-news .article__content img{
     height:60px;
     width: 110px;
     border-radius:7px;
 }
 
-.article__content{
-    gap: 1rem 5px;
+@media (max-width:550px){
+    .latest-news{
+        text-align: center;
+    }
+    .latest-news h2{
+        margin-bottom: 10px;
+    }
+    .latest-news .border-bottom{
+        display: block;
+        padding-bottom: 20px;
+    }
+    .latest-news .article__content img{
+        width: 130px;
+    }
+    .latest-news .article__content{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
 }
 
 /*************** latest-tasks *****************/
@@ -137,48 +148,51 @@
 .latest-tasks .complete--task h3,
 .latest-tasks .complete--task p{
     text-decoration: line-through;
+    text-decoration-color:var(--clr-dark-50);
 }
 
 /********************* latest upload ***********/
 
 .latest-upload img{
-    width:40px;
+    width: 40px;
+    height: 40px;
+    margin-left: -10px;
 }
 
 /**************** last projects progress ***********/
 
+
+.progress__container::before{
+    content: '';
+    position: absolute;
+    top:10px;
+    left:6px;
+    bottom: 10px;
+    width: 3px;
+    background: var(--clr-facebook-100);
+}
+
 .progress__container span{
-    border-left: 2px solid var(--clr-twitter-100);
+    margin-top: 35px;
+    padding-left: 5px;
+    color: var(--clr-dark-100);
 }
 
 .progress__container span::before{
     content: '';
     position: absolute;
     top: 50%;
-    left:-8px;
+    left: -30px;
     transform: translateY(-50%);
-    width:15px;
-    height:15px;
-    border:2px solid var(--clr-light-100);
-    outline:2px solid var(--clr-facebook-100);
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--clr-light-100);
+    outline: 2px solid var(--clr-facebook-100);
     border-radius: 50%;
-    background: var(--clr-twitter-100);
+    background: var(--clr-facebook-100);
 }
 
-.progress__container span:first-child{
-    padding-top: 0;
-}
-.progress__container span:last-child{
-    padding-bottom: 0;
-}
 
-.progress__container span:first-child::before{
-    top:9px;
-}
-.progress__container span:last-child::before{
-    bottom: -7px;
-    top: auto;
-}
 
 .progress__container span.current::before{
     background: var(--clr-facebook-50);
@@ -203,8 +217,13 @@
 /************************* reminders ***************/
 
 .reminder{
-    padding-left:7px;
+    min-height:45px;
+    padding-left:20px;
     border-left:2px solid #00f;
+}
+
+.reminder p {
+    margin-bottom: 0px;
 }
 
 .reminder::before{
@@ -250,7 +269,10 @@
     height: 50px;
     border-radius: 50%;
 }
-
+.last-post blockquote{
+    margin: 5px;
+    line-height: 2;
+}
 /****************** icon-container *************/
 
 .icon-container {
@@ -260,9 +282,9 @@
 
 /************************** projects ***************/
 .projects{
-    grid-column:1 / -1;
     max-width: 100%;
     margin-top:50px;
+    overflow: auto;
 }
 .projects-table{
     overflow-x:auto;
@@ -273,12 +295,11 @@
     color: var(--clr-dark-50);
 }
 .projects-table table th {
-    padding: 5px .62rem;
+    padding: 5px .63rem;
     border-top:1px solid var(--clr-light-100);
     border-bottom:1px solid var(--clr-light-100);
     border-left: 1px solid var(--clr-light-100);
-    font-size: 15px;
-    font-weight:800;
+    color: var(--clr-dark-100);
     background: var(--clr-light-25);
 }
 .projects-table table th:not(:first-of-type){
@@ -286,11 +307,10 @@
     margin-left: -15px;
 }
 .projects-table table td {
-    padding: 5px .62rem;
+    padding: 5px .63rem;
     border-left: 1px solid var(--clr-light-25);
     border-bottom: 1px solid var(--clr-light-25);
-    font-size: 13px;
-    font-weight:600;
+    color: var(--clr-dark-100);
 }
 
 .projects-table table tr th:last-child,
@@ -301,11 +321,10 @@
 
 .projects-table table img{
     position: relative;
-    width:30px;
-    height:30px;
+    width:32px;
+    height:32px;
     border-radius: 50%;
     padding: 2px;
-    border: .5px solid var(--clr-dark-25);
     background: var(--clr-light-100);
 }
 

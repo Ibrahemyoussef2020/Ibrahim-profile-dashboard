@@ -1,7 +1,35 @@
-/*600px 995px 1200px 1400px*/
+
+@media (max-width:325px){
+    body{
+        font-size: 14px;
+    }
+    .root__header .search-container{
+        width: 130px;
+    }
+    .root__header .me{
+        width: 0;
+    }
+    .root__page{
+        padding: 1px;
+    }
+    .fs-13,.fs-14{
+        font-size: 10px;
+    }
+    .fs-15{
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 1.1rem;
+    }
+}
 
 
-@media (min-width:600px){
+
+/*767px 995px 1200px 1400px*/
+
+
+@media (min-width:767px){
     /* components */
 
     .grid-x-small-boxes{
@@ -12,7 +40,7 @@
         gap: 20px;
     }
     .grid-medium-boxes{
-        grid-template-columns: repeat(auto-fill,minmax(var(--medium-box-w),1fr));
+        grid-template-columns: repeat(auto-fit,minmax(var(--medium-box-w),1fr));
         gap: 15px;
     }
     .grid-large-boxes{
@@ -46,7 +74,38 @@
         display: flex;
     }
 
+    /* lay out */
+
+    .root{
+        grid-template-columns: 200px 1fr;
+    }
+    .root .root__aside li span{
+        display: block;
+    }
+
+    .root__aside{
+        padding: 20px;
+    }
+
+    .root__page {
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .root__aside .root__my-name{
+        min-width:85px;
+        font-size:1.17em;
+        padding-bottom:24px;
+        margin:13px auto 25px auto;
+        border-bottom:2px solid var(--clr-dark-100);
+    }
+
+    .root__aside .root__my-name::after{
+        display: inline-block;
+    }
+
     /* dashboard */
+
 
     .welcome__cover{
         background-image: none;
@@ -57,10 +116,10 @@
     }
 
     .welcome__profile-img{
-        bottom:-20px;
-        left:20px;
+        left:2rem;
         transform: none;
     }
+
 
     /* projects */
 
@@ -84,12 +143,6 @@
         --container-medium-boxes-x:40px;
         --container-medium-boxes-x:40px;
     }
-    .root{
-        grid-template-columns:150px 1fr;
-    }
-    .root .root__aside li span{
-        display: block;
-    }
 
     .sm-hide-lg-inline{
         display: inline;
@@ -98,6 +151,7 @@
     .sm-inline-lg-hide{
         display: none;
     }
+
 
         /* profile */
 
@@ -109,4 +163,10 @@
             margin-bottom: 0;
         }
 
+}
+
+@media (min-width:1400px){
+    .full-md-col{
+        grid-column:auto;
+    }
 }

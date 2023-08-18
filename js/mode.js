@@ -26,3 +26,13 @@ toggleMode.addEventListener('click' , _ =>{
         localStorage.setItem('mode', 'light-mode');
 })
 
+
+/************************* */
+
+const headerToggle = document.querySelector('.header__toggle'),
+        dropToggleMenu = document.querySelector('.mode-settings');
+
+
+        dropToggleMenu.addEventListener('click',e=>{
+            headerToggle.classList.toggle('drop-mode')
+        })

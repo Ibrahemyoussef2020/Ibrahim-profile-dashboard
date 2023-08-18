@@ -9,7 +9,7 @@
     <!--fonts-->  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
     <!--styles-->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/all.min.css">
@@ -27,15 +27,20 @@
 
     <div class="root">
         <aside class="root__aside relative z-1">
-            <h3 class="root__my-name"> 
-                <span class="sm-hide-lg-inline clr-light-black">Ibrahim</span>
-                <span class="sm-inline-lg-hide fw-700 clr-light-black">H</span>
+            <h3 class="root__my-name clr-black"> 
+                Ibrahim
             </h3>
-            <ul class="pl-10 fs-14 clr-gray">
+            <ul class="fs-14 clr-black">
                 <li>
                     <a href="index.html" class="active">
                         <i class="fa-regular fa-chart-bar fa-fw"></i>
                         <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
                     </a>
                 </li>
                 <li>
@@ -57,23 +62,18 @@
                     </a>
                 </li>
                 <li>
-                    <a href="files.html">
-                        <i class="fa-regular fa-file fa-fw"></i>
-                        <span>Files</span>
-                    </a>
-                </li>
-                <li>
                     <a href="friends.html">
                         <i class="fa-regular fa-circle-user fa-fw"></i>
                         <span>Friends</span>
                     </a>
                 </li>
                 <li>
-                    <a href="setting.html">
-                        <i class="fa-solid fa-gear fa-fw"></i>
-                        <span>Settings</span>
+                    <a href="files.html">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>Files</span>
                     </a>
                 </li>
+                
                 <li>
                     <a href="plans.html">
                         <i class="fa-regular fa-credit-card fa-fw"></i>
@@ -84,19 +84,20 @@
         </aside>
 
         <header class="root__header flex-center-between bg-white p-x-20 shadow">
-            <div class="search-container radius-6 pl-15">
-                <input type="text" class="size-100 fs-13  o-none b-none radius-inherit" placeholder="search about">
+            <div class="search-container">
+                <input type="text" class="w-100 p-10  o-none b-none clr-black" placeholder="search about">
             </div>
-            <div class="bill-picture flex gap-5">
-                <i class="fa-regular fa-bell bell relative clr-black"></i>
-                <img src="images/people/me.webp" alt="Ibrahim image" class="me">
-            </div>
-        </header>
+            <div class="bill-picture flex align-center relative">
+                <i class="fa-regular fa-bell bell fa-lg relative clr-black"></i>
+                <img src="images-2/avatar.png" alt="Ibrahim" class="me">
 
-        <section class="root__page">
-            <div class="header flex flex-center-between">
-                <h1 class="page__heading m-25 p-10 ml-25 relative">Dashboard</h1>
-                <div class="custom-toggle-component mr-10 flex gap-5 align-center clr-orange" id="app-mode">
+                <div class="mode-settings-container">
+                    <button class="mode-settings clr-black b-none o-none ff-awesome fw-700">&#xf013;</button>
+                </div>
+            </div>
+
+            <div class="header__toggle w-100 bg-white fit-content ">
+                <div class="custom-toggle-component fit-content mx-auto flex gap-5 align-center clr-orange" id="app-mode">
                     <i class="fa-solid fa-moon fw-800 p-5 mb-5 clr-black"></i>
                     <label class="custom-toggle clickable">
                         <input type="checkbox" class="custom-toggle-checkbox mt-5">
@@ -106,96 +107,105 @@
                     </label>
                     <i class="fa-solid fa-sun fw-800 p-5 mb-5 clr-black"></i>
                 </div>
+            </div>
+        </header>
+
+        <section class="root__page">
+            <div class="header flex flex-center-between">
+                <h1 class="page__heading relative">Dashboard</h1>
+                
             </div> 
             
-            <div class="boxes-container grid-medium-boxes">
-                <article class="box welcome bg-white pb-15">
-                    <div class="welcome__cover flex js-between p-10 radius-6 relative">
-                        <div class="welcome__intro">
+            <div class="boxes-container grid-medium-boxes flow-hidden">
+                <article class="box welcome bg-white">
+                    <div class="welcome__cover bg-gray flex js-between p-10 radius-6 relative">
+                        <div class="welcome__intro p-20">
                             <h2>Welcome!</h2>
-                            <span class="fs-12">Ibrahim Youssef</span>
+                            <p class="title-description">Ibrahim</p>
                         </div>
-                        <img class="welcome__cover-img" src="./images/covers/dashboard-cover.webp" alt="welcome img">
-
-                        <img class="welcome__profile-img radius-50" src="images/people/me-2.webp" alt="my profile picture">
+                        <img class="welcome__cover-img" src="images-2/welcome.png" alt="Hello">
+                        <img class="welcome__profile-img bg-white b-ccc radius-50" src="images-2/avatar.png" alt="Ibrahim">    
                     </div> 
-                    <div class="welcome__body bg-white p-10">
-                        <div class="welcome__articles flex js-between center">
+                    <div class="welcome__body bg-white pt-20 pb-20 p-x-10">
+                        <div class="welcome__articles sm-block-md-flex js-between center">
                             <article class="flex-1">
-                                <span class="block fs-15 fw-800 ">Ibrahim</span>
-                                <p class="mt-5 fs-14 fw-600 clr-gray">Frontend</p>
+                                <span class="block fs-15 fw-500 clr-black">Ibrahim</span>
+                                <p class="mt-5 fs-14  clr-gray">Frontend</p>
                             </article>
                             <article class="flex-1">
-                                <span class="block fs-15 fw-800 ">200</span>
-                                <p class="mt-5 fs-14 fw-600 clr-gray">Project</p>
+                                <span class="block fs-15 fw-500 clr-black">200</span>
+                                <p class="mt-5 fs-14  clr-gray">Project</p>
                             </article>
                             <article class="flex-1">
-                                <span class="block fs-15 fw-800 ">2000</span>
-                                <p class="mt-5 fs-14 fw-600 clr-gray">Friend</p>
+                                <span class="block fs-15 fw-500 clr-black">2000</span>
+                                <p class="mt-5 fs-14  clr-gray">Friend</p>
                             </article>
                         </div>
-                        <a class="btn mt-15 ml-auto mr-10 bg-facebook clr-white fs-13 fw-600 block fit-content" href="profile.html">Profile</a>
+                        <a class="btn mt-15 ml-auto mr-10 bg-facebook  fs-14 block fit-content" href="profile.html" target="_blank">Profile</a>
                     </div>
                 </article>
-                <article class="box message bg-white p-10 pb-15">
+                <article class="box message bg-white p-20">
                     <h2>Quick Draft</h2>
-                    <p class="fs-14">Don't hesitate to get in touch</p>
-                    <input class="p-10 mt-15 w-100 fs-14 bg-gray b-none o-none" type="text" aria-label="title" placeholder="Title">
-                    <textarea class="p-15 mt-15 w-100 fs-14 bg-gray b-none o-none" aria-label="content" placeholder="Content..." rows="5"></textarea>
-                    <button class="btn mt-15 ml-auto mr-10 o-none b-none bg-facebook clr-white fs-13 fw-600 block fit-content" href="#">Send</button>
+                    <p class="title-description">Write A Draft For Your Ideas</p>
+                    <input class="radius-6 p-10 mt-15 w-100 fs-14 bg-gray b-none o-none" type="text" aria-label="title" placeholder="Title">
+                    <textarea class="radius-6 p-15 mt-15 w-100 fs-14 bg-gray b-none o-none" aria-label="content" placeholder="Your Thought" rows="5"></textarea>
+                    <button class="btn mt-15 ml-auto mr-10 o-none b-none bg-facebook  fs-14  radius-6 block fit-content" href="#">Send</button>
                 </article>
-                <article class="box targets p-10 pb-15">
+                <article class="box targets p-20">
                     <h2>Yearly Target</h2>
-                    <p class="fs-14 mb-15">We have many targets for example not limited</p>
+                    <p class="title-description">Targets Of The Year</p>
                     
-                    <div class="target target--mony mb-15 flex">
+                    <div class="target target--mony mb-20 flex">
                         <div class="target__icon flex-center relative bg-light-facebook">
                             <i class="fa-solid fa-dollar-sign fa-lg clr-facebook"></i>
                         </div>
                         <div class="target__content-progress">
                             <div class="target__content p-5">
-                                <span class="fs-14 block mb-2">Mony</span>
-                                <span class="fs-14 fw-700 clr-light-black">$.20.000</span>
+                                <span class="block fs-14 clr-gray mb-5">Mony</span>
+                                <span class="fw-700 mt-5 mb-10">$.20.000</span>
                             </div>
-                            <div class="target__progress relative bg-facebook"  style="width:80%">
-                                <span class="fs-14 bg-inherit clr-white">80%</span>
+                            <div class="target__progress relative bg-light-facebook">
+                                <span class="thumb bg-facebook" style="width:80%"></span>
+                                <span class="text fs-14 bg-facebook clr-white">80%</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="target target--projects mb-15 flex">
+                    <div class="target target--projects mb-20 flex">
                         <div class="target__icon flex-center relative bg-light-orange">
                             <i class="fa-solid fa-code fa-lg clr-orange"></i>
                         </div>
                         <div class="target__content-progress">
                             <div class="target__content p-5">
-                                <span class="fs-14 block mb-2">Projects</span>
-                                <span class="fs-14 fw-700 clr-light-black">74</span>
+                                <span class="block fs-14 clr-gray  mb-5">Projects</span>
+                                <span class="fw-700 mt-5 mb-10">74</span>
                             </div>
-                            <div class="target__progress relative bg-orange"  style="width:60%">
-                                <span class="fs-14 bg-inherit clr-white">60%</span>
+                            <div class="target__progress relative bg-light-orange">
+                                <span class="thumb bg-orange" style="width:55%"></span>
+                                <span class="text fs-14 bg-orange clr-white">55%</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="target target--team mb-15 flex">
+                    <div class="target target--team mb-20 flex">
                         <div class="target__icon flex-center relative bg-light-primary">
                             <i class="fa-solid fa-user fa-lg clr-primary"></i>
                         </div>
                         <div class="target__content-progress">
                             <div class="target__content p-5">
-                                <span class="fs-14 block mb-2">Team</span>
-                                <span class="fs-14 fw-700 clr-light-black">17</span>
+                                <span class="block fs-14 clr-gray  mb-5">Team</span>
+                                <span class="fw-700 mt-5 mb-10">12</span>
                             </div>
-                            <div class="target__progress relative bg-primary"  style="width:90%">
-                                <span class="fs-14 bg-inherit clr-white">90%</span>
+                            <div class="target__progress relative bg-light-primary">
+                                <span class="thumb bg-primary" style="width:55%"></span>
+                                <span class="text fs-14 bg-primary clr-white">75%</span>
                             </div>
                         </div>
                     </div>
                 </article>
-                <article class="box tickets p-10 pb-15">
+                <article class="box tickets p-20 pb-15">
                     <h2>Tickets Statistic</h2>
-                    <p class="fs-14 mb-15">We have many targets for example not limited</p>
+                    <p class="title-description">Everything About Support Tickets</p>
 
                     <div class="tickets__content flex-center-between">
                         <div class="ticket radius-10 flex-1 flex-center flex-column p-15">
@@ -220,228 +230,217 @@
                         </div>
                     </div>
                 </article>
-                <article class="latest-news articles pb-15 bg-white">
-                    <h2 class="mb-20 p-10">Latest News</h2>
-                    <div class="border-bottom flex-center-between p-15">
+                <article class="latest-news full-md-col articles p-20 bg-white">
+                    <h2 class="mb-20">Latest News</h2>
+                    <div class="border-bottom flex-center-between pt-10 pb-10">
                         <div class="article__content flex-1 flex">
-                            <img src="images/covers/5.webp" alt="article img">
-                            <div class="article__intro flex flex-column js-center">
-                                <h3>Created Sass Section</h3>
-                                <p class="ellipsis fs-13">There are many features are presented in Sass</p>    
+                            <img src="images-2/news-01.png" alt="article img">
+                            <div class="article__intro flex flex-column js-center pt-5">
+                                <h3 class="mt-5">Created SASS Section</h3>
+                                <p class="title-description">New SASS Examples & Tutorials</p>    
                             </div>
                         </div>
                         <span class='label'>3 Days Ago</span>
                     </div>
 
-                    <div class="border-bottom flex-center-between p-15">
+                    <div class="border-bottom flex-center-between pt-10 pb-10">
                         <div class="article__content flex-1 flex">
-                            <img src="images/covers/4.webp" alt="article img">
-                            <div class="article__intro flex flex-column js-center">
-                                <h3>Created AI widget</h3>
-                                <p class="ellipsis fs-13">Now you can depend on AI to build some simple component</p>    
+                            <img src="images-2/news-02.png" alt="article img">
+                            <div class="article__intro flex flex-column js-center pt-5">
+                                <h3 class="mt-5">Changed The Design</h3>
+                                <p class="title-description">A Brand New Website Design</p>    
                             </div>
                         </div>
                         <span class='label'>4 Days Ago</span>
                     </div>
 
-                    <div class="border-bottom flex-center-between p-15">
+                    <div class="border-bottom flex-center-between pt-10 pb-10">
                         <div class="article__content flex-1 flex">
-                            <img src="images/covers/3.webp" alt="article img">
-                            <div class="article__intro flex flex-column js-center">
-                                <h3>The new in Next.13</h3>
-                                <p class="ellipsis fs-13">There are many features are presented in Sass</p>    
+                            <img src="images-2/news-03.png" alt="article img">
+                            <div class="article__intro flex flex-column js-center pt-5">
+                                <h3 class="mt-5">Team Increased</h3>
+                                <p class="title-description">3 Developers Joined The Team</p>    
                             </div>
                         </div>
                         <span class='label'>1 Week Ago</span>
                     </div>
-                    <div class="border-bottom flex-center-between p-15">
+                    <div class="border-bottom flex-center-between pt-10 pb-10">
                         <div class="article__content flex-1 flex">
-                            <img src="images/covers/5.webp" alt="article img">
-                            <div class="article__intro flex flex-column js-center">
-                                <h3>Type script and oop</h3>
-                                <p class="ellipsis fs-13">There are many features are presented in Sass</p>    
+                            <img src="images-2/news-04.png" alt="article img">
+                            <div class="article__intro flex flex-column js-center pt-10">
+                                <h3 class="fs-15">Payment Gateway</h3>
+                                <p class="title-description">Many Payment Gateways</p>    
                             </div>
                         </div>
                         <span class='label'>2 Weeks Ago</span>
                     </div>
                 </article>
-                <article class="latest-tasks articles p-10 pb-15 bg-white">
-                    <h2 class="mb-15">Latest Tasks</h2>
-                    <div class="task flex-center-between p-10 border-bottom">
+                <article class="latest-tasks articles p-20 pb-15 bg-white">
+                    <h2 class="mb-20">Latest Tasks</h2>
+                    <div class="task flex-center-between p-10 pl-0 border-bottom">
                         <div class=" flex-1 flex">
-                            <div class=" flex flex-column js-center">
-                                <h3>Play with Js algorithm</h3>
-                                <p class="fs-13 ellipsis">There are many features are presented in Sass</p>    
+                            <div class=" flex flex-column js-center pt-5">
+                                <h3 class="fs-15">Record One New Video</h3>
+                                <p class="title-description mb-5">Record Python Create Exe Project</p>    
                             </div>
                         </div>
                         <i class="fa-regular fa-trash-can delete clickable clr-tomato"></i>
                     </div>
-                    <div class="task complete--task  flex-center-between p-10 border-bottom">
+                    <div class="task complete--task  flex-center-between p-10 pl-0  border-bottom">
                         <div class=" flex-1 flex">
                             <div class="flex flex-column js-center">
-                                <h3>Develope template figma</h3>
-                                <p class="fs-13 ellipsis">There are many features are presented in Sass</p>    
+                                <h3 class="fs-15">Develope template figma</h3>
+                                <p class="title-description mb-5">There are many features are presented in Sass</p>    
                             </div>
                         </div>
                         <i class="fa-regular fa-trash-can delete clickable clr-tomato"></i>
                     </div>
-                    <div class="task flex-center-between p-10 border-bottom">
+                    <div class="task flex-center-between p-10 pl-0  border-bottom">
                         <div class=" flex-1 flex">
                             <div class=" flex flex-column js-center">
-                                <h3>Read in design pattern code</h3>
-                                <p class="fs-13 ellipsis">There are many features are presented in Sass</p>    
+                                <h3  class="fs-15">Write Article</h3>
+                                <p class="title-description mb-5">Write Low Level vs High Level Languages</p>    
                             </div>
                         </div>
                         <i class="fa-regular fa-trash-can delete clickable clr-tomato"></i>
                     </div>
-                    <div class="task complete--task flex-center-between p-10 border-bottom">
+                    <div class="task complete--task flex-center-between p-10 pl-0  border-bottom">
                         <div class=" flex-1 flex">
                             <div class=" flex flex-column js-center">
-                                <h3>Problem solving progress</h3>
-                                <p class="fs-13 ellipsis">There are many features are presented in Sass</p>    
+                                <h3 class="fs-15">Finish Project</h3>
+                                <p class="title-description mb-5">Publish Academy Programming Project</p>    
                             </div>
                         </div>
                         <i class="fa-regular fa-trash-can delete clickable clr-tomato"></i>
-                    </div>
-                    <div class="task flex-center-between p-10 border-bottom">
-                        <div class=" flex-1 flex">
-                            <div class=" flex flex-column js-center">
-                                <h3>Data structure</h3>
-                                <p class="fs-13 ellipsis">There are many features are presented in Sass</p>    
-                            </div>
-                        </div>
-                        <i class="fa-regular fa-trash-can delete clickable clr-tomato"></i>
-                    </div>                 
+                    </div>                
                 </article>
-                <article class="top-search p-10 pb-15 bg-white">
-                    <h2 class="mb-15">Top Search Items</h2>
-                    <hr class="bg-gray " />
-                    <div class="flex-center-between">
-                        <span class="fs-13 fw-800 ">keyword</span>
-                        <span class="fs-13 fw-800 ">Count search</span>
+                <article class="top-search p-20 pb-15 bg-white">
+                    <h2 class="mb-20">Top Search Items</h2>
+                    <div class="flex-center-between mb-15 pt-10">
+                        <span class="clr-gray">keyword</span>
+                        <span class="clr-gray">Count search</span>
                     </div>
-                    <hr class="bg-gray mb-10" />
-                    <div class="flex-center-between p-10">
-                        <span class="fs-13 fw-600 clr-light-black">Next 13</span>
-                        <span class="label fw-600">42 Once</span>
+                    <div class="flex-center-between pt-10 pb-10">
+                        <span class="clr-black fs-15">Next 13</span>
+                        <span class="label clr-black fs-13">42 Once</span>
                     </div>
-                    <div class="flex-center-between p-10">
-                        <span class="fs-13 fw-600 clr-light-black">Sass 2022</span>
-                        <span class="label fw-600">39 Once</span>
+                    <div class="flex-center-between pt-10 pb-10">
+                        <span class="clr-black fs-15">Sass 2022</span>
+                        <span class="label clr-black fs-13">39 Once</span>
                     </div>
-                    <div class="flex-center-between p-10">
-                        <span class="fs-13 fw-600 clr-light-black">Figma 2023</span>
-                        <span class="label fw-600">28 Once</span>
+                    <div class="flex-center-between pt-10 pb-10">
+                        <span class="clr-black fs-15">Figma 2023</span>
+                        <span class="label clr-black fs-13">28 Once</span>
                     </div>
-                    <div class="flex-center-between p-10">
-                        <span class="fs-13 fw-600 clr-light-black">Data structure</span>
-                        <span class="label fw-600">26 Once</span>
+                    <div class="flex-center-between pt-10 pb-10">
+                        <span class="clr-black fs-15">Data structure</span>
+                        <span class="label clr-black fs-13">26 Once</span>
                     </div>
-                    <div class="flex-center-between p-10">
-                        <span class="fs-13 fw-600 clr-light-black">Pixel perfect</span>
-                        <span class="label fw-600">14 Once</span>
+                    <div class="flex-center-between pt-10 pb-10">
+                        <span class="clr-black fs-15">Pixel perfect</span>
+                        <span class="label clr-black fs-13">14 Once</span>
                     </div> 
-                    <div class="flex-center-between p-10">
-                        <span class="fs-13 fw-600 clr-light-black">Problem solving</span>
-                        <span class="label fw-600">14 Once</span>
+                    <div class="flex-center-between pt-10 pb-10">
+                        <span class="clr-black fs-15">Problem solving</span>
+                        <span class="label clr-black fs-13">14 Once</span>
                     </div>       
                 </article> 
-                <article class="latest-upload articles p-10 pb-15 bg-white">
-                    <h2 class="mb-20">Latest Upload</h2>
-                    <div class="flex-center-between">
-                        <div class="article__content flex-1 flex">
-                            <img src="images/files/dll.svg" alt="article img" class="clr-facebook">
-                            <div class="article__intro flex flex-column js-center">
-                                <span class="fs-13 fw-600 clr-light-black">Next13.pdf</span>
-                                <p class="ellipsis fs-13">Next docs</p>    
+                <article class="latest-upload articles p-20 pb-15 bg-white">
+                    <h2 class="mb-20">Latest Uploads</h2>
+                    <div class="flex-center-between pb-10 mb-10 border-bottom">
+                        <div class="article__content flex-1 flex pt-10">
+                            <img src="images-2/pdf.svg" alt="article img" class="clr-facebook">
+                            <div class="article__intro ml-10 flex flex-column js-center">
+                                <span class="clr-black">My-file.pdf</span>
+                                <p class="title-description mb-0 fs-15">King</p>    
                             </div>
                         </div>
-                        <span class='label'>160 Once</span>
+                        <span class='label'>2.9mb</span>
                     </div>
-                    <div class="flex-center-between ">
+                    <div class="flex-center-between pb-10 mb-10 border-bottom">
                         <div class="article__content flex-1 flex">
-                            <img src="images/files/txt.svg" alt="article img">
-                            <div class="article__intro flex flex-column js-center">
-                                <span class="fs-13 fw-600 clr-light-black">React-Hook.pdf</span>
-                                <p class="ellipsis fs-13">React docs</p>    
+                            <img src="images-2/avi.svg" alt="article img" class="clr-facebook">
+                            <div class="article__intro ml-10 flex flex-column js-center">
+                                <span class="clr-black">My-Video-File.avi</span>
+                                <p class="title-description mb-0 fs-15">Admin</p>    
                             </div>
                         </div>
-                        <span class='label'>290 Once</span>
+                        <span class='label'>2.3mb</span>
                     </div>
-                    <div class="flex-center-between ">
+                    <div class="flex-center-between pb-10 mb-10 border-bottom">
                         <div class="article__content flex-1 flex">
-                            <img src="images/files/pdf.svg" alt="article img">
-                            <div class="article__intro flex flex-column js-center">
-                                <span class="fs-13 fw-600 clr-light-black">Design-pattern.pdf</span>
-                                <p class="ellipsis fs-13">the duck</p>    
+                            <img src="images-2/dll.svg" alt="article img" class="clr-facebook">
+                            <div class="article__intro ml-10 flex flex-column js-center">
+                                <span class="clr-black">My-Psd-File.pdf</span>
+                                <p class="title-description mb-0 fs-15">Next</p>    
                             </div>
                         </div>
-                        <span class='label'>500 Once</span>
+                        <span class='label'>7.2mb</span>
                     </div>
-                    <div class="flex-center-between ">
+                    <div class="flex-center-between pb-10 mb-10 border-bottom">
                         <div class="article__content flex-1 flex">
-                            <img src="images/files/png.svg" alt="article img">
-                            <div class="article__intro flex flex-column js-center">
-                                <span class="fs-13 fw-600 clr-light-black">Solid.pdf</span>
-                                <p class="ellipsis fs-13">The voice</p>    
+                            <img src="images-2/pdf.svg" alt="article img" class="clr-facebook">
+                            <div class="article__intro ml-10 flex flex-column js-center">
+                                <span class="clr-black">My-Zip-File.pdf</span>
+                                <p class="title-description mb-0 fs-15">Screener</p>    
                             </div>
                         </div>
-                        <span class='label'>150 Once</span>
+                        <span class='label'>2.7mb</span>
                     </div>
-                    <div class="flex-center-between ">
+                    <div class="flex-center-between pb-10 mb-10 border-bottom">
                         <div class="article__content flex-1 flex">
-                            <img src="images/files/sql.svg" alt="article img">
-                            <div class="article__intro flex flex-column js-center">
-                                <span class="fs-13 fw-600 clr-light-black">Pixel-perfect.pdf</span>
-                                <p class="ellipsis fs-13">The voice</p>    
+                            <img src="images-2/dll.svg" alt="article img" class="clr-facebook">
+                            <div class="article__intro ml-10 flex flex-column js-center">
+                                <span class="clr-black">My-DLL-File.pdf</span>
+                                <p class="title-description mb-0 fs-15">Admin</p>    
                             </div>
                         </div>
-                        <span class='label'>290 Once</span>
+                        <span class='label'>2.9mb</span>
                     </div>
                 </article>
-                <article class="project-progress articles p-10 pb-15 bg-white relative flow-hidden">
+                <article class="project-progress  articles p-20 pb-15 bg-white relative flow-hidden">
                     <h2 class="mb-20">Last Projects Progress</h2>
-                    <div class="progress__container pl-10">
-                        <span class="relative block fw-600 fs-14 p-15">Got the project</span>
-                        <span class="relative block fw-600 fs-14 p-15">Started the project</span>
-                        <span class="relative block fw-600 fs-14 p-15">Nearing completion</span>
-                        <span class="current relative block fw-600 fs-14 p-15">Test the project</span>
-                        <span class="yet relative block fw-600 fs-14 p-15">Finish the project</span>
+                    <div class="progress__container relative pl-10">
+                        <span class="relative block ml-25">Got the project</span>
+                        <span class="relative block  ml-25">Started the project</span>
+                        <span class="relative block  ml-25">Nearing completion</span>
+                        <span class="current relative block  ml-25">Test the project</span>
+                        <span class="yet relative block  ml-25">Finish the project</span>
                     </div>
 
-                    <img class="rocket" src="images/rocket.webp" alt="rocket img">
+                    <img class="rocket" src="images-2/project.png" alt="rocket img">
                 </article>
-                <article class="reminders articles p-10 pb-15 bg-white relative flow-hidden">
+                <article class="reminders articles p-20 pb-15 bg-white relative flow-hidden">
                     <h2 class="mb-20">Reminders</h2>
-                    <div class="reminder flex flex-column js-center mb-15 ml-25 relative facebook">
-                        <span class="fs-14 fw-600 clr-light-black">Test last app media</span>
-                        <p class="fs-13 ellipsis">There are many features are presented in Sass</p>    
+                    <div class="reminder flex flex-column js-between mb-15 ml-25 relative facebook">
+                        <span class="fs-14 fw-700 clr-black">Check My Tasks List</span>
+                        <p class="title-description fs-13">28/09/2022 - 11:00am</p>    
                     </div>
-                    <div class="reminder flex flex-column js-center mb-15 ml-25 relative primary">
-                        <span class="fs-14 fw-600 clr-light-black">Check my mail</span>
-                        <p class="fs-13 ellipsis">There are many features are presented in Sass</p>    
+                    <div class="reminder flex flex-column js-between mb-15 ml-25 relative primary">
+                        <span class="fs-14 fw-700 clr-black">Check my mail</span>
+                        <p class="title-description fs-13">28/09/2022 - 12:00am</p>    
                     </div>
-                    <div class="reminder flex flex-column js-center mb-15 ml-25 relative tomato">
-                        <span class="fs-14 fw-600 clr-light-black">Un Hour on LinkedIn</span>
-                        <p class="fs-13 ellipsis">There are many features are presented in Sass</p>    
+                    <div class="reminder flex flex-column js-between mb-15 ml-25 relative tomato">
+                        <span class="fs-14 fw-700 clr-black">Un Hour on LinkedIn</span>
+                        <p class="title-description fs-13">27/09/2022 - 01:00bm</p>    
                     </div>
-                    <div class="reminder flex flex-column js-center mb-15 ml-25 relative orange">
-                        <span class="fs-14 fw-600 clr-light-black">Read about closure </span>
-                        <p class="fs-13 ellipsis">There are many features are presented in Sass</p>    
+                    <div class="reminder flex flex-column js-between mb-15 ml-25 relative orange">
+                        <span class="fs-14 fw-700 clr-black">Read about closure </span>
+                        <p class="title-description fs-13">26/09/2022 - 03:00bm</p>    
                     </div>
                 </article>
-                <article class="last-post articles p-10 pb-15 bg-white relative flow-hidden">
+                <article class="last-post articles p-20 pb-15 bg-white relative flow-hidden">
                     <h2 class="mb-20">Last post</h2>
 
                     <div class="bost-header flex-1 flex mb-10">
-                        <img class="my-img radius-50" src="images/people/me-2.webp" alt="article img">
-                        <div class="flex flex-column js-center pl-7">
-                            <h3 class="mb-2">Created Sass Section</h3>
-                            <p class="ellipsis fs-13 fw-500">There are many features are presented in Sass</p>    
+                        <img class="my-img radius-50" src="images-2/avatar.png" alt="Ibrahim">
+                        <div class="flex flex-column js-center pl-7 mt-5">
+                            <h3 class="mb-2">Ibrahim Youssef</h3>
+                            <p class="title-description">About 3 Hours Ago</p>    
                         </div>
                     </div>
-                    <blockquote class="bost-body fs-14 clr-light-black">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde odio voluptate sapiente omnis dolores, fugiat in reiciendis corrupti delectus porro nisi ducimus et officia. Deleniti ea provident molestiae totam atque.
+                    <blockquote class="bost-body clr-black">
+                        You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.
                     </blockquote>
                     <hr class="mt-15" />
                     <div class="post-footer flex-center-between p-10">
@@ -455,16 +454,16 @@
                         </div>
                     </div>
                 </article>
-                <article class="social-acconts articles p-10 pb-15 bg-white relative flow-hidden">
-                    <h2 class="mb-20">Last post</h2>
+                <article class="social-acconts articles p-20  pb-15 bg-white relative flow-hidden">
+                    <h2 class="mb-20">Social Media Stats</h2>
                     <div class="social-accont flex-center-between bg-light-twitter mb-10 pr-7">
                         <div class="social-details flex-center fit-content">
                             <div class="icon-container bg-twitter flex-center center radius-2">
                                 <i class="fa-brands fa-twitter fa-2x clr-white"></i>
                             </div>
-                            <span class="block pl-7 fs-13 fw-500 clr-twitter">900k Subscribers</span>
+                            <span class="block fs-15 pl-7 clr-twitter">90k Follower</span>
                         </div>
-                        <span class="p-5 radius-6 fw-600 fs-13 clickable clr-white bg-twitter">follow</span>
+                        <span class="btn fs-13 clr-white clickable bg-twitter">Follow</span>
                     </div>
 
                     <div class="social-accont flex-center-between bg-light-facebook mb-10 pr-7">
@@ -472,9 +471,9 @@
                             <div class="icon-container bg-facebook flex-center center radius-2">
                                 <i class="fa-brands fa-facebook-f fa-2x clr-white"></i>
                             </div>
-                            <span class="block pl-7 fs-13 fw-500 clr-facebook">100k Subscribers</span>
+                            <span class="block fs-15 pl-7  clr-facebook">2M Like</span>
                         </div>
-                        <span class="p-5 radius-6 fw-600 fs-13 clickable clr-white bg-facebook">follow</span>
+                        <span class="btn fs-13 clr-white clickable  bg-facebook">Like</span>
                     </div>
 
                     <div class="social-accont flex-center-between bg-light-youtube mb-10 pr-7">
@@ -482,118 +481,117 @@
                             <div class="icon-container bg-youtube flex-center center radius-2">
                                 <i class="fa-brands fa-youtube fa-2x clr-white"></i>
                             </div>
-                            <span class="block pl-7 fs-13 fw-500 clr-youtube">500k Subscribers</span>
+                            <span class="block fs-15 pl-7 clr-youtube">1M Subs</span>
                         </div>
-                        <span class="p-5 radius-6 fw-600 fs-13 clickable clr-white bg-youtube">suscribe</span>
+                        <span class="btn fs-13 clr-white clickable  bg-youtube">Subscribe</span>
                     </div>
 
-                    <div class="social-accont flex-center-between bg-light-twitter mb-10 pr-7">
+                    <div class="social-accont flex-center-between bg-light-linkedin mb-10 pr-7">
                         <div class="social-details flex-center fit-content">
-                            <div class="icon-container bg-twitter flex-center center radius-2">
+                            <div class="icon-container bg-linkedin flex-center center radius-2">
                                 <i class="fa-brands fa-linkedin fa-2x clr-white"></i>
                             </div>
-                            <span class="block pl-7 fs-13 fw-500 clr-twitter">10k connect</span>
+                            <span class="block fs-15 pl-7 clr-twitter">70k Follower</span>
                         </div>
-                        <span class="p-5 radius-6 fw-600 fs-13 clickable clr-white bg-twitter">connect</span>
+                        <span class="btn fs-13 clr-white clickable  bg-linkedin">Follow</span>
+                    </div>
+                </article>
+                <article class="projects full-col p-20 pb-15 bg-white">
+                    <h2 class="mb-15">projects</h2>
+                    <div class="projects-table scroll">
+                        <table class=" fs-15">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Finish Date</th>
+                                <th>Client</th>
+                                <th>Price</th>
+                                <th>Team</th>
+                                <th>Status</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Ministry Wikipedia</td>
+                                <td>10 May 2022</td>
+                                <td>Ministry</td>
+                                <td>$5300</td>
+                                <td>
+                                <img src="images-2/team-01.png" alt="name" />
+                                <img src="images-2/team-02.png" alt="name" />
+                                <img src="images-2/team-03.png" alt="name" />
+                                <img src="images-2/team-04.png" alt="name" />
+                                </td>
+                                <td>
+                                <span class="p-5 p-y-2 radius-6 clr-white  bg-orange">Pending</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Friends Shop</td>
+                                <td>12 Oct 2021</td>
+                                <td>Jomia Company</td>
+                                <td>$1500</td>
+                                <td>
+                                    <img src="images-2/team-03.png" alt="person" />
+                                    <img src="images-2/team-02.png" alt="person" />
+                                    <img src="images-2/team-05.png" alt="person" />
+                                </td>
+                                <td>
+                                    <span class="p-5 p-y-2 radius-6 clr-white bg-twitter">In Progress</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Bouba App</td>
+                                <td>05 Sep 2021</td>
+                                <td>Bouba</td>
+                                <td>$800</td>
+                                <td>
+                                    <img src="images-2/team-02.png" alt="" />
+                                    <img src="images-2/team-01.png" alt="" />
+                                </td>
+                                <td><span class="p-5 p-y-2 radius-6 clr-white  bg-primary">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Mahmoud Website</td>
+                                <td>22 May 2021</td>
+                                <td>Mahmoud</td>
+                                <td>$600</td>
+                                <td>
+                                    <img src="images-2/team-03.png" alt="name" />
+                                    <img src="images-2/team-05.png" alt="name" />
+                                </td>
+                                <td><span class="p-5 p-y-2 radius-6  clr-white bg-primary">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Sayed Website</td>
+                                <td>24 May 2021</td>
+                                <td>Sayed</td>
+                                <td>$300</td>
+                                <td>
+                                    <img src="images-2/team-02.png" alt="name" />
+                                    <img src="images-2/team-04.png" alt="name" />
+                                </td>
+                                <td><span class="p-5 p-y-2 radius-6 clr-white bg-youtube">Rejected</span></td>
+                            </tr>
+                            <tr>
+                                <td>Arena Application</td>
+                                <td>01 Mar 2021</td>
+                                <td>Arena Company</td>
+                                <td>$2600</td>
+                                <td>
+                                    <img src="images-2/team-05.png" alt="name" />
+                                    <img src="images-2/team-01.png" alt="name" />
+                                    <img src="images-2/team-02.png" alt="name" />
+                                    <img src="images-2/team-03.png" alt="name" />
+                                </td>
+                                <td><span class="p-5 p-y-2 radius-6 clr-white bg-primary">Completed</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </article>        
             </div>
         </section>
-
-        <section class="projects w-100 mb-20 pl-25 pt-15 bg-white radius-6">
-            <h2 class="mb-15">projects</h2>
-            <div class="projects-table scroll">
-                <table class=" fs-15">
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Finish Date</th>
-                        <th>Client</th>
-                        <th>Price</th>
-                        <th>Team</th>
-                        <th>Status</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Ministry Wikipedia</td>
-                        <td>10 May 2022</td>
-                        <td>Ministry</td>
-                        <td>$5300</td>
-                        <td>
-                        <img src="images/people/1.webp" alt="" />
-                        <img src="images/people/2.webp" alt="" />
-                        <img src="images/people/3.webp" alt="" />
-                        <img src="images/people/4.webp" alt="" />
-                        </td>
-                        <td>
-                        <span class="p-5 p-y-2 radius-6 clr-white  bg-orange">Pending</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Friends Shop</td>
-                        <td>12 Oct 2021</td>
-                        <td>Jomia Company</td>
-                        <td>$1500</td>
-                        <td>
-                            <img src="images/people/5.webp" alt="" />
-                            <img src="images/people/6.webp" alt="" />
-                            <img src="images/people/7.webp" alt="" />
-                        </td>
-                        <td>
-                            <span class="p-5 p-y-2 radius-6 clr-white bg-twitter">In Progress</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Bouba App</td>
-                        <td>05 Sep 2021</td>
-                        <td>Bouba</td>
-                        <td>$800</td>
-                        <td>
-                            <img src="images/people/8.webp" alt="" />
-                            <img src="images/people/9.webp" alt="" />
-                        </td>
-                        <td><span class="p-5 p-y-2 radius-6 clr-white  bg-primary">Completed</span></td>
-                    </tr>
-                    <tr>
-                        <td>Mahmoud Website</td>
-                        <td>22 May 2021</td>
-                        <td>Mahmoud</td>
-                        <td>$600</td>
-                        <td>
-                            <img src="images/people/3.webp" alt="" />
-                            <img src="images/people/4.webp" alt="" />
-                        </td>
-                        <td><span class="p-5 p-y-2 radius-6  clr-white bg-primary">Completed</span></td>
-                    </tr>
-                    <tr>
-                        <td>Sayed Website</td>
-                        <td>24 May 2021</td>
-                        <td>Sayed</td>
-                        <td>$300</td>
-                        <td>
-                            <img src="images/people/5.webp" alt="" />
-                            <img src="images/people/6.webp" alt="" />
-                        </td>
-                        <td><span class="p-5 p-y-2 radius-6 clr-white bg-youtube">Rejected</span></td>
-                    </tr>
-                    <tr>
-                        <td>Arena Application</td>
-                        <td>01 Mar 2021</td>
-                        <td>Arena Company</td>
-                        <td>$2600</td>
-                        <td>
-                            <img src="images/people/1.webp" alt="" />
-                            <img src="images/people/2.webp" alt="" />
-                            <img src="images/people/3.webp" alt="" />
-                            <img src="images/people/4.webp" alt="" />
-                        </td>
-                        <td><span class="p-5 p-y-2 radius-6 clr-white bg-primary">Completed</span></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>  
     </div> 
 </body>
 </html>
