@@ -31,7 +31,7 @@
 
     --clr-dark-100:#000;
     --clr-dark-50:#333;
-    --clr-dark-25:#888;
+    --clr-dark-25:#777;
     --clr-dark-15:#ccc;
 
     --clr-light-100:#fff;
@@ -116,6 +116,9 @@ button , input:not(.outlined){
     outline: none;
     color: var(--clr-dark-100);
 }
+input::placeholder,textarea::placeholder{
+    color:var(--clr-dark-25);
+}
 button,
 .clickable,
 input[type='checkbox'],
@@ -123,12 +126,14 @@ input[type='radio']{
     cursor: pointer;
     color: var(--clr-dark-100);
 }
+
 textarea{
     resize: none;
     color: var(--clr-dark-100);
 }
-input::placeholder,textarea::placeholder{
-    opacity: .7;
+
+.place-black::placeholder{
+    font-weight: 500;
 }
 a,button{
     display: inline-block;
@@ -268,6 +273,71 @@ hr{
     background: var(--clr-light-25);
 }
 
+input.normal-checked {
+    position: absolute;
+    width:0px;
+    height:0px;
+    padding: 1px;
+    margin: -1px;
+}
+
+input.normal-checked::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 18px;
+    height: 18px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+input.normal-checked::after{
+    content: '\f00c';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 18px;
+    height: 18px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--font-awesome);
+    font-weight:600;
+    font-size: 12px;
+    color:#fff;
+    background:var(--clr-facebook-100);
+    border-radius: 4px;
+
+    transform: rotateZ(60deg)scale(0);
+    transition: transform .4s ease-in-out;
+    z-index: 0;
+}
+
+input.normal-checked:checked:after{
+    transform: rotateZ(0deg)scale(1);
+}
+
+input[type='radio']::before{
+    border-radius: 50%;
+}
+
+input[type='radio']::after{
+    content:'';
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+
+    top:3px;
+    left:3px;
+    
+}
+
 .ellipsis{
     display: block;
     max-width: 150px;
@@ -318,6 +388,10 @@ hr{
 }
 .w-img-200  img {
     width:200px;
+}
+
+.text-wrap{
+    white-space:normal;
 }
 
 /* animations */
@@ -432,7 +506,9 @@ hr{
 
 
 /* paddings */
-
+.p-0{
+    padding: 0;
+}
 .p-5{
     padding: 5px;
 }
@@ -714,6 +790,9 @@ background-color:var(--clr-light-100);
 }
 .fs-15 {
     font-size:.94rem;
+}
+.fs-16{
+    font-size:1rem;
 }
 .fs-25 {
     font-size:1.57rem;

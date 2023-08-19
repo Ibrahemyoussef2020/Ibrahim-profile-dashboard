@@ -9,7 +9,7 @@
     <!--fonts-->  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
     <!--styles-->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/all.min.css">
@@ -27,15 +27,20 @@
 
     <div class="root">
         <aside class="root__aside relative z-1">
-            <h3 class="root__my-name"> 
-                <span class="sm-hide-lg-inline clr-light-black">Ibrahim</span>
-                <span class="sm-inline-lg-hide fw-700 clr-light-black">H</span>
+            <h3 class="root__my-name clr-black"> 
+                Ibrahim
             </h3>
-            <ul class="pl-10 fs-14 clr-gray">
+            <ul class="fs-14 clr-black">
                 <li>
                     <a href="index.html">
                         <i class="fa-regular fa-chart-bar fa-fw"></i>
-                        <span>Board</span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
                     </a>
                 </li>
                 <li>
@@ -57,23 +62,18 @@
                     </a>
                 </li>
                 <li>
-                    <a href="files.html">
-                        <i class="fa-regular fa-file fa-fw"></i>
-                        <span>Files</span>
-                    </a>
-                </li>
-                <li>
                     <a href="friends.html" class="active">
                         <i class="fa-regular fa-circle-user fa-fw"></i>
                         <span>Friends</span>
                     </a>
                 </li>
                 <li>
-                    <a href="setting.html">
-                        <i class="fa-solid fa-gear fa-fw"></i>
-                        <span>Settings</span>
+                    <a href="files.html">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>Files</span>
                     </a>
                 </li>
+                
                 <li>
                     <a href="plans.html">
                         <i class="fa-regular fa-credit-card fa-fw"></i>
@@ -84,28 +84,18 @@
         </aside>
 
         <header class="root__header flex-center-between bg-white p-x-20 shadow">
-            <div class="search-container switch-container--mode radius-6 pl-15">
+            <div class="search-container radius-6 pl-15">
                 <input type="text" class="size-100 fs-13  o-none b-none radius-inherit" placeholder="search about">
             </div>
-            <div class="bill-picture flex gap-5">
-                <i class="fa-regular fa-bell bell relative clr-black"></i>
-                <img src="images/people/me.webp" alt="Ibrahim image" class="me">
-            </div>
+                <div class="bill-picture flex gap-5">
+                    <i class="fa-regular fa-bell bell relative clr-black"></i>
+                    <img src="images/people/me.webp" alt="Ibrahim image" class="me">
+                </div>
         </header>
 
         <section class="root__page">
             <div class="header flex flex-center-between">
-                <h1 class="page__heading m-25 p-10 ml-25 relative">Friends</h1>
-                <div class="custom-toggle-component mr-10 flex gap-5 align-center clr-orange" id="app-mode">
-                    <i class="fa-solid fa-moon fw-800 p-5 mb-5 clr-black"></i>
-                    <label class="custom-toggle clickable">
-                        <input type="checkbox" class="custom-toggle-checkbox mt-5">
-                        <div class="switch-container switch-container--mode relative">
-                            <span class="circle block h-100 radius-50"></span>
-                        </div>
-                    </label>
-                    <i class="fa-solid fa-sun fw-800 p-5 mb-5 clr-black"></i>
-                </div>
+                <h1 class="page__heading relative">Friends</h1>
             </div> 
             <div class="boxes-container grid-small-boxes">
                 <article class="box cart welcome bg-white pb-15 p-10 ">

@@ -272,8 +272,8 @@ html::-webkit-scrollbar-thumb,
 }
 
 .switch-container{
-    width:40px;
-    height: 20px;
+    width: 78px;
+    height: 32px;
     background: var(--clr-facebook-50);
     border-radius: 15px;
     margin-top:3px;
@@ -284,10 +284,21 @@ html::-webkit-scrollbar-thumb,
     top:50%;
     left: 0;
     transform: translateY(-50%);
-    height:15px;
-    width: 15px;
+    height:25px;
+    width: 25px;
     background: var(--clr-light-100);
     transition: left .5s ease-in-out;
+}
+
+.custom-toggle:has(input:checked) .circle::after{
+    content: '\f00c';
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    font-family: var(--font-awesome);
+    font-weight: 700;
+    border-radius: inherit;
+    color: var(--clr-facebook-100);
 }
 
 .custom-toggle input:checked + div{
@@ -295,7 +306,7 @@ html::-webkit-scrollbar-thumb,
 }
 
 .custom-toggle input:checked + div > span{
-    left:calc(100% - 15px);
+    left:calc(100% - 27px);
 }
 
 .switch-container--mode.moon{

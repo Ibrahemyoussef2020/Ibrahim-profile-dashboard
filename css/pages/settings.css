@@ -1,23 +1,56 @@
-.security__social-row{
+
+.settings .title-description {
+    white-space: normal;
+    line-height: 1.6;
+}
+
+.security .custom-toggle{
+    margin-top: 45px;
+}
+
+/********** social *********/
+
+.social-row{
     height: 40px;
+    flex-direction: row-reverse;
+}
+.social i{
+    transition:color .3s ease-in-out;
+}
+.social-row input:focus + div > i{
+    color: var(--clr-dark-100);
 }
 
-.security i{
-    font-size:1.6rem
-}
-
-.security__social {
+.social {
     width: 40px;
+    border-right: 1px solid #ccc;
 }
 
-.security__social , .content{
-    background: var(--clr-light-15);
+.social-row , .content{
+    background: var(--clr-light-50);
     border:.5px solid var(--clr-dark-15);
 }
 
 /********************* servers *********************/
 
 .server{
-    height:70px;
     min-width:120px;
+}
+
+.servers label:has(input:checked){
+    color: var(--clr-facebook-100);
+    border-color: var(--clr-facebook-100);
+} 
+
+.servers input{
+    position: absolute;
+    width:0px;
+    height:0px;
+    padding: 1px;
+    margin: -1px;
+}
+
+
+.server span{
+    font-size: 1.2rem;
 }
