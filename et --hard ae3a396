@@ -1,0 +1,50 @@
+[33m2bbc3aa[m[33m ([m[1;36mHEAD[m[33m)[m HEAD@{0}: commit: re add index afetr merging
+[33me93c601[m HEAD@{1}: rebase (continue) (pick): pixel perfect : settings page
+[33m208d7ae[m HEAD@{2}: commit: -
+[33m769b94b[m HEAD@{3}: pull --rebas origin main (start): checkout 769b94b8b79951cc278ae6300b80e183096b45e5
+[33mae3a396[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{4}: commit: pixel perfect: file page - modify switch toggle component - some classes
+[33m9935672[m HEAD@{5}: commit: pixel perfect : settings page
+[33maf81008[m HEAD@{6}: commit: pixel perfect: layout - dashboard
+[33m066af0e[m HEAD@{7}: commit: add plan page & some classes
+[33mc0b4f8c[m HEAD@{8}: commit: refornate before creating the last page plans
+[33m6f2b70d[m HEAD@{9}: commit: modify var clr-dark-25 in dark-mode
+[33m409f4d2[m HEAD@{10}: commit: modify main-coureses columns
+[33m2b861a5[m HEAD@{11}: commit: create courses page & some vars , classes
+[33m86c499e[m HEAD@{12}: commit: change progress div bg
+[33m14631e4[m HEAD@{13}: commit: modify projects section 2
+[33m51c4438[m HEAD@{14}: commit: modify projects section
+[33m5758124[m HEAD@{15}: commit: add profile page & some classes
+[33m0b59f5e[m HEAD@{16}: commit: modify file width
+[33m61e10d3[m HEAD@{17}: commit: add files section & local storahe mode & some classes
+[33m2ef232f[m HEAD@{18}: commit: add page friends and some classes
+[33m9a04a90[m HEAD@{19}: commit: add settings page
+[33m0ed5b5f[m HEAD@{20}: commit: add dark mode and some classes
+[33m36f5e0b[m HEAD@{21}: commit: finish the dashboard page via added tabel section and some class
+[33m1835852[m HEAD@{22}: commit: add animation to Last Projects
+[33mb4237d1[m HEAD@{23}: commit: reformat targets section
+[33m4b00fd0[m HEAD@{24}: commit: add social section
+[33m4dd7d1c[m HEAD@{25}: commit: add sevral classes light and else
+[33mf9f2658[m HEAD@{26}: commit: add latsp post section
+[33me5ee487[m HEAD@{27}: commit: add classes and blockqout format
+[33mbbb63d0[m HEAD@{28}: commit: add reminders section and some classes
+[33mb741e8b[m HEAD@{29}: commit: add project progress section
+[33m129d41e[m HEAD@{30}: commit: add padding to latest news heading
+[33m75fa1e3[m HEAD@{31}: commit: add latest upload section and reformat all prev sections
+[33m0cd97aa[m HEAD@{32}: commit: add ellipsis component
+[33m0620bf0[m HEAD@{33}: commit: add upload img folder
+[33m843fda5[m HEAD@{34}: commit: add top search section
+[33m8595093[m HEAD@{35}: commit: add prop to hr element
+[33m643a7dd[m HEAD@{36}: commit: add component label
+[33me94a6fa[m HEAD@{37}: commit: add latest Tasks section
+[33mf035d49[m HEAD@{38}: commit: add props to h3
+[33me21c6e6[m HEAD@{39}: commit: change h3 props
+[33mddafd2c[m HEAD@{40}: commit: add tickets section and some classes,vars
+[33mccd5e7c[m HEAD@{41}: commit: change aside h3 color to light black
+[33meedec54[m HEAD@{42}: commit: add google fonts bold & draft section & targets section & add classes,vars
+[33mfdf43ee[m HEAD@{43}: commit: add welcome cover image
+[33m98971c1[m HEAD@{44}: commit: add google fonts
+[33mcca9d6d[m HEAD@{45}: commit: add welcome image
+[33mb9402bd[m HEAD@{46}: commit: build layout page to wrap the entire website and add some classes
+[33m4c930a3[m HEAD@{47}: commit: add some classes , component classes , vars
+[33m5a91abe[m HEAD@{48}: Branch: renamed refs/heads/master to refs/heads/main
+[33m5a91abe[m HEAD@{50}: commit (initial): initial commit
