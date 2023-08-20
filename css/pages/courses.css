@@ -4,7 +4,7 @@
 }
 
 .main-courses .cover{
-    min-height: 150px;
+    min-height:225px;
     background:#00f;
     background-image:url('../../images/covers/course-1.webp');
     background-size: cover;
@@ -31,16 +31,13 @@
 .main-courses .cover--6{
     background-image:url('../../images/covers/2.webp');
 }
-.main-courses .cover--7{
-    background-image:url('../../images/covers/3.webp');
-}
 
 .main-courses .small-img{
     top: 10px;
     left: 10px;
-    width:50px;
-    height:50px;
-    padding: .5px;
+    width:65px;
+    height:65px;
+    padding:2px;
 }
 
 .cart-footer{
