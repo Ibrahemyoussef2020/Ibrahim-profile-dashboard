@@ -169,7 +169,7 @@
     /* files */
 
     .files-container{
-        grid-template-columns: 1fr 210px;
+        grid-template-columns: 1fr 220px;
         padding-left:10px;
         padding-right:10px;
     }
