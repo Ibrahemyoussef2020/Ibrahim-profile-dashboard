@@ -19,6 +19,10 @@
     color: #fff;
 }
 
+.help-container i{
+    color: var(--clr-light-50);
+}
+
 /* plan row */
 
 .plan__features_row{
