@@ -40,6 +40,17 @@
     .activities .article__intro{
         margin-bottom: 20px;
     }
+
+    /* projects */
+
+    .main-projects .structure{
+        flex-direction: column;
+    }
+
+    .structure__footer{
+        flex-direction: column;
+    }
+
 }
 
 
@@ -139,13 +150,12 @@
     }
 
 
-    /* projects */
+
+    /* profiles */
 
     .profile-cart{
         min-width:220px;
     }
-
-    /* profiles */
 
     .profile-informations .flex-center{
         align-items: flex-start;
@@ -181,16 +191,15 @@
         display: none;
     }
 
+    /* profile */
 
-        /* profile */
+    .profile_top{
+        display: flex;
+    }
 
-        .profile_top{
-            display: flex;
-        }
-
-        .profile-info > div:last-of-type{
-            margin-bottom: 0;
-        }
+    .profile-info > div:last-of-type{
+        margin-bottom: 0;
+    }
 
 }
 

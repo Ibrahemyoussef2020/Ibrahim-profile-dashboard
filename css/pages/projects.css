@@ -5,19 +5,30 @@
     height:40px;
     border-radius: 50%;
     padding: 2px;
-    border: .5px solid var(--clr-dark-25);
+    border: .5px solid var(--clr-dark-15);
     background: var(--clr-light-100);
+}
+
+.main-projects .title-description{
+    min-width: 100%;
+    line-height: 1.5;
 }
 
 .main-projects .bg-gray{
     background:#cccccc75;
 }
 
+.main-projects .team{
+    min-height:50px;
+    display: flex;
+    align-items: center;
+}
+
 .main-projects .structure{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 5px;
+    gap:15px;
 }
 
 .main-projects hr{
@@ -25,11 +36,17 @@
 }
 
 .structure__footer{
-    align-items: baseline;
+    gap: 10px;
+    align-items:center;
+    align-self: center;
 }
 
 
 .structure__progress{
-    width:25%;
-    height:4px;
+    width:65%;
+    min-width: 200px;
+    max-width: 350px;
+    height:8px;
+    border-radius: 8px;
+    margin-bottom:7px;
 }

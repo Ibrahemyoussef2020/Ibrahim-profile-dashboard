@@ -1,11 +1,6 @@
 
 :root{
 
-    /* widths */
-
-    --container-large-boxes-x:10px;
-    --container-medium-boxes-x:10px;
-    --container-small-boxes-x:10px;
 
     --x-small-box-w:140px;
     --small-box-w:265px;
@@ -178,7 +173,6 @@ hr{
 }
 
 .grid-small-boxes{
-    width: calc(100% - var(--container-small-boxes-x));
     margin-left:auto;
     margin-right: auto;
     display: grid;
@@ -187,7 +181,6 @@ hr{
     gap:5px;
 }
 .grid-medium-boxes{
-    width: calc(100% - var(--container-medium-boxes-x));
     margin-left:auto;
     margin-right: auto;
     display: grid;
@@ -196,7 +189,6 @@ hr{
     gap: .63rem 1rem;
 }
 .grid-large-boxes{
-    width: calc(100% - var(--container-large-boxes-x));
     margin-left:auto;
     margin-right: auto;
     display: grid;
@@ -370,6 +362,10 @@ input[type='radio']::after{
 }
 .fit-content{
     width: fit-content;
+}
+.mxw-none{
+    max-width: none;
+    white-space:normal;
 }
 .w-img-50 img {
     width: 100px;
