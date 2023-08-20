@@ -84,13 +84,30 @@
         </aside>
 
         <header class="root__header flex-center-between bg-white p-x-20 shadow">
-            <div class="search-container radius-6 pl-15">
-                <input type="text" class="size-100 fs-13  o-none b-none radius-inherit" placeholder="search about">
+            <div class="search-container">
+                <input type="text" class="w-100 p-10  o-none b-none clr-black" placeholder="search about">
             </div>
-                <div class="bill-picture flex gap-5">
-                    <i class="fa-regular fa-bell bell relative clr-black"></i>
-                    <img src="images/people/me.webp" alt="Ibrahim image" class="me">
+            <div class="bill-picture flex align-center relative">
+                <i class="fa-regular fa-bell bell fa-lg relative clr-black"></i>
+                <img src="images-2/avatar.png" alt="Ibrahim" class="me">
+
+                <div class="mode-settings-container">
+                    <button class="mode-settings clr-black b-none o-none ff-awesome fw-700">&#xf013;</button>
                 </div>
+            </div>
+
+            <div class="header__toggle w-100 bg-white fit-content ">
+                <div class="custom-toggle-component fit-content mx-auto flex gap-5 align-center clr-orange" id="app-mode">
+                    <i class="fa-solid fa-moon fw-800 p-5 mb-5 clr-black"></i>
+                    <label class="custom-toggle clickable">
+                        <input type="checkbox" class="custom-toggle-checkbox mt-5">
+                        <div class="switch-container switch-container--mode relative">
+                            <span class="circle block h-100 radius-50"></span>
+                        </div>
+                    </label>
+                    <i class="fa-solid fa-sun fw-800 p-5 mb-5 clr-black"></i>
+                </div>
+            </div>
         </header>
 
         <section class="root__page">

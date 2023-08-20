@@ -3,7 +3,7 @@
 
 
     --x-small-box-w:140px;
-    --small-box-w:265px;
+    --small-box-w:250px;
     --medium-box-w:310px;
     --large-box-w:350px;
 
@@ -180,6 +180,13 @@ hr{
     justify-content: space-around;
     gap:5px;
 }
+
+.main-courses article{
+    max-width:450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .grid-medium-boxes{
     margin-left:auto;
     margin-right: auto;
