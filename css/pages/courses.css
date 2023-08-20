@@ -17,22 +17,22 @@
 }
 
 .main-courses .cover--1{
-    background-image:url('../../images/covers/course-1.webp');
+    background-image:url('../../images/course-01.jpg');
 }
 .main-courses .cover--2{
-    background-image:url('../../images/covers/course-2.webp');
+    background-image:url('../../images/course-02.jpg');
 }
 .main-courses .cover--3{
-    background-image:url('../../images/covers/course-3.webp');
+    background-image:url('../../images/course-03.jpg');
 }
 .main-courses .cover--4{
-    background-image:url('../../images/covers/course-4.webp');
+    background-image:url('../../images/course-04.jpg');
 }
 .main-courses .cover--5{
-    background-image:url('../../images/covers/course-5.webp');
+    background-image:url('../../images/course-05.jpg');
 }
 .main-courses .cover--6{
-    background-image:url('../../images/covers/2.webp');
+    background-image:url('../../images/course-02.jpg');
 }
 
 .main-courses .small-img{
