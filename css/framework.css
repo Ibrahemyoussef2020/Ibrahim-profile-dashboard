@@ -596,7 +596,9 @@ input[type='radio']::after{
 .r-gap-10{
     row-gap: 10px;
 }
-
+.r-gap-20{
+    row-gap: 20px;
+}
 /* display */
 
 .block{

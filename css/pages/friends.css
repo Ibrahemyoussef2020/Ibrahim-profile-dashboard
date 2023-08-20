@@ -1,12 +1,38 @@
+.friends article{
+    position: relative;
+}
+
+.cart__icons{
+    position: absolute;
+    top:10px;
+    left:10px;
+    width: 100%;
+    min-height: 50px;
+}
+
+.friends .cart__icons i{
+    width:30px;
+    height:30px;
+    background:var(--clr-light-25);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:15px;
+    cursor: pointer;
+    margin:0 4px;
+}
+
+
 .cart__profile{
     top: -1rem;
 }
 
 .cart__profile img{
-    width:80px;
-    height:80px;
+    width:100px;
+    height:100px;
     padding:2px;
+    margin-top:1rem;
     background: var(--clr-light-100);
     border-radius: 100%;
-    border: 1px solid var(--clr-dark-25);
 }
