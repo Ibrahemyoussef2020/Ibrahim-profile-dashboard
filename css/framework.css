@@ -176,13 +176,7 @@ hr{
     align-items: flex-start;
     gap:5px;
 }
-.grid-x-small-boxes.custom-x{
-    width:100%;
-    grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
-}
-.grid-x-small-boxes.main-courses{
-    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
-}
+
 .grid-small-boxes{
     width: calc(100% - var(--container-small-boxes-x));
     margin-left:auto;
@@ -581,6 +575,11 @@ input[type='radio']::after{
 .gap-5 {
     gap:5px;
 }
+
+.gap-10 {
+    gap:5px;
+}
+
 
 .gap-20 {
     gap: 1.25rem;

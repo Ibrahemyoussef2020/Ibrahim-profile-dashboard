@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,168 +115,185 @@
                 <h1 class="page__heading relative">Profile</h1>
             </div>
             
-            <div class="profile p-20">
-                <div class="profile_top radius-6 flex w-100 bg-white p-10">
-                    <div class="profile-cart b-proportional  b-proportional  b-proportional  b-proportional mx-auto p-x-20 pt-20 pb-10 radius-6">
-                        <img class="profile__img block mx-auto radius-50 mt-15" src="images/people/me.webp" alt="Ibrahim">
-                        <span class="block center mt-10 mb-5 fs-15 fw-700 clr-black">Ibrahim Youssef</span>
-                        <p class="pb-15 fs-12 fw-400 clr-light-black center">Frontend developer</p>
-                        <div class="profile-cart__progress mb-15 mx-auto radius-6">
+            <div class="profile">
+                <div class="profile_top radius-6 flex w-100 bg-white">
+                    <div class="profile-cart p-20 mx-auto pt-20 pb-10 radius-10">
+                        <img class="profile__img block mx-auto radius-50 mt-15" src="images-2/avatar.png" alt="Ibrahim">
+                        <h3 class="profile__name center mt-20 mb-15 clr-black">Ibrahim Youssef</h3>
+                        <p class="title-description center">Frontend developer</p>
+                        <div class="profile-cart__progress mb-10 mx-auto radius-6">
                             <span class="bg-facebook block h-100 radius-inherit" style="width:70%"></span>
                         </div>
-                        <div class="profile-cart  b-proportional  b-proportional  b-proportional  b-proportional__rating center p-10">
-                            <i class="fa-solid fa-star clr-orange"></i>
-                            <i class="fa-solid fa-star clr-orange"></i>
-                            <i class="fa-solid fa-star clr-orange"></i>
-                            <i class="fa-solid fa-star clr-orange"></i>
-                            <i class="fa-solid fa-star clr-orange"></i>
+                        <div class="profile-cart mb-10 center">
+                            <i class="fa-solid fa-star fs-13 clr-orange"></i>
+                            <i class="fa-solid fa-star fs-13 clr-orange"></i>
+                            <i class="fa-solid fa-star fs-13 clr-orange"></i>
+                            <i class="fa-solid fa-star fs-13 clr-orange"></i>
+                            <i class="fa-solid fa-star fs-13 clr-orange"></i>
                         </div>
-                        <p class="clr-light-black fs-12 fw-600 center">550 Rating</p>
+                        <p class="clr-gray fs-13 fw-500 center">550 Rating</p>
                     </div>
 
-                    <div class="profile-informations flex-1 ml-10">
-                        <article class="profile-info custom-x p-x-20 pt-10 pb-10 grid-x-small-boxes gap-5 w-100 border-bottom">
-                            <h3 class="heading mb-10">Personal information</h3>              
+                    <div class="profile-informations p-20 flex-1 ml-10">          
+
+                        <div class="job-info center  pt-10 pb-10 grid-x-small-boxes gap-5 w-100 border-bottom">
+                            <h3 class="heading title-description mb-10 fw-400">Job information</h3>              
     
-                                <div class="flex flex-nowrap c-gap-5">
-                                    <h4 class="fs-13 m-0 clr-light-black">Email</h4>
-                                    <span class="email clr-light-black">ibrahimYoussef95.12@gmail</span>
+                            <div class="flex-center gap-5 mb-10 flex-nowrap">
+                                <h4 class="fs-14 fw-400 m-0 clr-gray">Title:</h4>
+                                <span class="fs-14 clr-black">Frontend Developer</span>
+                            </div>
+                            <div class="flex-center gap-5 mb-10 flex-nowrap">
+                                <h4 class="fs-14 fw-400 m-0 clr-gray">JS Framework</h4>
+                                <span class="fs-14 clr-black">Next-React library</span>
+                            </div>
+                            <div class="flex-center gap-5 mb-10 flex-wrap">
+                                <h4 class="fs-14 fw-400 m-0 clr-gray">Experience</h4>
+                                <span class="email fs-14 clr-black">Fresh</span>
+                            </div>    
+    
+                            <label class="custom-toggle clickable block">
+                                <input type="checkbox" checked>
+                                <div class="switch-container relative">
+                                    <span class="circle block h-100 radius-50"></span>
                                 </div>
-                                <div class="flex flex-nowrap c-gap-5">
-                                    <h4 class="fs-13 m-0 clr-light-black">Phone</h4>
-                                    <span class="fs-12 clr-light-black">01147359396</span>
+                            </label>
+                        </div>
+
+                        <div class="personal-info  pt-10 pb-10 grid-x-small-boxes gap-5 w-100 border-bottom">
+                            <h3 class="heading title-description mb-10 fw-400 center">Personal information</h3>              
+    
+                                <div class="flex-center gap-5 mb-10 flex-wrap">
+                                    <h4 class="fs-14 fw-400 m-0 clr-gray">Email:</h4>
+                                    <span class="email fs-14 clr-black">ibrahimYoussef95.12</span>
                                 </div>
-                                <div class="flex flex-nowrap c-gap-5">
-                                    <h4 class="fs-13 m-0 clr-light-black">Date of birth</h4>
-                                    <span class="fs-12 clr-light-black">13-12-1995</span>
+                                <div class="flex-center gap-5 mb-10 flex-nowrap">
+                                    <h4 class="fs-14 fw-400 m-0 clr-gray">Phone:</h4>
+                                    <span class="fs-14 clr-black">01147359396</span>
+                                </div>
+                                <div class="flex-center gap-5 mb-10 flex-nowrap">
+                                    <h4 class="fs-14 fw-400 m-0 clr-gray">Date of birth:</h4>
+                                    <span class="fs-14 clr-black">13-12-1995</span>
                                 </div>
     
-                                <label class="custom-toggle clickable">
+                                <label class="custom-toggle clickable block">
                                     <input type="checkbox">
                                     <div class="switch-container relative">
                                         <span class="circle block h-100 radius-50"></span>
                                     </div>
                                 </label>
-                        </article>
+                        </div>
     
-                        <article class="profile-info custom-x p-x-20 pt-10 pb-10 grid-x-small-boxes gap-5 w-100 border-bottom">
-                            <h3 class="heading mb-10">General information</h3>              
+                        <div class="social-info  center pt-10 pb-10 grid-x-small-boxes gap-5 w-100 border-bottom">
+                            <h3 class="heading title-description mb-10 fw-400">Social Information</h3>              
     
-                                <div class="flex flex-nowrap c-gap-5">
-                                    <h4 class="fs-13 m-0 clr-light-black">Full name</h4>
-                                    <span class="fs-12 clr-light-black">Ibrahim Youssef</span>
+                                <div class="flex-center gap-5 mb-10 flex-wrap">
+                                    <h4 class="fs-14 fw-400 m-0 clr-gray">Linkedin</h4>
+                                    <a class="fs-14 clr-black" target="_blank" href="https://www.linkedin.com/in/ibrahim-youssef-2a65b1261/">ibrahim-youssef-2a65b1261</a>
                                 </div>
-                                <div class="flex flex-nowrap c-gap-5">
-                                    <h4 class="fs-13 m-0 clr-light-black">Full name</h4>
-                                    <span class="fs-12 clr-light-black">Ibrahim Youssef</span>
+                                <div class="flex-center gap-5 mb-10 flex-wrap">
+                                    <h4 class="fs-14 fw-400 m-0 clr-gray">Portfolio:</h4>
+                                    <a class="fs-14 clr-black" target="_blank" href="https://my-pt.onrender.com/">my-pt.onrender.com</a>
                                 </div>
-                                <div class="flex flex-nowrap c-gap-5">
-                                    <h4 class="fs-13 m-0 clr-light-black">Full name</h4>
-                                    <span class="fs-12 clr-light-black">Ibrahim Youssef</span>
+                                <div class="flex-center gap-5 mb-10 flex-wrap">
+                                    <h4 class="fs-14 fw-400 m-0 clr-gray">Resume:</h4>
+                                    <a class="fs-14 clr-black"
+                                    target="_blank"
+                                    href="https://docs.google.com/document/d/1lEcMbfZj4o7YWaR6tyWj0As98YwJOQKxHxLDj3VIiU8/edit"
+                                    >Ibrahim Youssef Resume</a>
                                 </div>
     
-                                <label class="custom-toggle clickable">
-                                    <input type="checkbox">
+                                <label class="custom-toggle clickable block">
+                                    <input type="checkbox" checked>
                                     <div class="switch-container relative">
                                         <span class="circle block h-100 radius-50"></span>
                                     </div>
                                 </label>
-                        </article>
-    
-                        <article class="profile-info custom-x p-x-20 pt-10 pb-10 grid-x-small-boxes gap-5 w-100 border-bottom">
-                            <h3 class="heading mb-10">Job information</h3>              
-    
-                                <div class="flex flex-nowrap c-gap-5">
-                                    <h4 class="fs-13 m-0 clr-light-black">Title</h4>
-                                    <span class="fs-12 clr-light-black">Frontend developer</span>
-                                </div>
-                                <div class="flex flex-nowrap c-gap-5">
-                                    <h4 class="fs-13 m-0 clr-light-black">Experience</h4>
-                                    <span class="fs-12 clr-light-black">Fresh</span>
-                                </div>
-                                <div class="flex flex-nowrap c-gap-5">
-                                    <h4 class="fs-13 m-0 clr-light-black">Skills</h4>
-                                    <span class="fs-12 clr-light-black">Many</span>
-                                </div>
-    
-                                <label class="custom-toggle clickable">
-                                    <input type="checkbox">
-                                    <div class="switch-container relative">
-                                        <span class="circle block h-100 radius-50"></span>
-                                    </div>
-                                </label>
-                        </article>
+                        </div>
                     </div>
                 </div>
                 <div class="profile-bottom radius-6 w-100 flex flex-wrap align-start gap-20 mt-15">
-                    <div class="skills flex-1 bg-white p-10">
-                        <h2 class="fs-15 fw-600 clr-black">My Skills</h2>
-                        <p class="mb-25 fs-13 fw-700 clr-gray">Complete skills List</p>
-                        <article class="skills__container w-100  gap-20 flex flex-wrap">
-                            <span class="label">HTML</span>
-                            <span class="label">Css</span>
-                            <span class="label">Bootstrap</span>
-                            <span class="label">Javascript</span>
-                            <span class="label">Typescript</span>
-                            <span class="label">Sass</span>                           
-                            <span class="label">MUI</span>
-                            <span class="label">React.js</span>
-                            <span class="label">Next.js</span>
+                    <div class="skills p-20 flex-1 bg-white">
+                        <h2 class="pt-20 clr-black">My Skills</h2>
+                        <p class="title-description">Complete skills List</p>
+                        <article class="skills__container">
+                            
+                            <div class="skills__row border-bottom">
+                                <span class="label">HTML</span>
+                                <span class="label">Css</span>
+                                <span class="label">Sass</span> 
+                            </div>
+
+                            <div class="skills__row border-bottom">
+                                <span class="label">Bootstrap</span>
+                                <span class="label">Material UI</span>
+                            </div>
+
+                            <div class="skills__row border-bottom">
+                                <span class="label">Javascript</span>
+                                <span class="label">Typescript</span>
+                            </div>
+                        
+                            <div class="skills__row border-bottom">
+                                <span class="label">React.js</span>
+                                <span class="label">Next.js</span>
+                            </div>
+
                         </article>
                     </div>
-                    <div class="activities bg-white p-10 flex-1">
-                        <h2 class="fs-15 fw-600 clr-black">Last Activities</h2>
-                        <p class="mb-10 fs-13 fw-700 clr-gray">Some important latest activities</p>
-                        <article class="border-bottom flex-center-between">
-                            <div class="article__content flex-1 flex">
-                                <img class="radius-50 p-10" src="images/activity-1.webp" alt="store">
-                                <div class="article__intro flex flex-column js-center">
-                                    <h3 class="mb-0 fs-13">Store</h3>
-                                    <p class="ellipsis fs-13">online shopping</p>    
+                    <div class="activities p-20  bg-white flex-1">
+                        <h2 class="pt-20  clr-black">Last Activities</h2>
+                        <p class="title-description">Some important latest activities</p>
+                        <article class="border-bottom pb-20 mb-20 flex-center-between">
+                            <div class="article__content flex-1 gap-10 flex">
+                                <img class="radius-50" src="images/activity-1.webp" alt="store">
+                                <div class="article__intro pt-5 flex flex-column js-center">
+                                    <h3 class="mb-5 fw-400">Store</h3>
+                                    <p class="title-description m-0">online shopping</p>    
                                 </div>
                             </div>
-                            <div>
-                                <span class="block fs-13 fw-700 mb-10 center">17:30</span>
-                                <span class="block fs-12 center">Yesterday</span>
+                            <div class="activities__time mb-10">
+                                <span class="block mb-5 center clr-black">17:30</span>
+                                <span class="title-description">Yesterday</span>
                             </div>
                         </article>
-                        <article class="border-bottom flex-center-between">
-                            <div class="article__content flex-1 flex">
-                                <img class="radius-50 p-10" src="images/activity-2.webp" alt="academy">
-                                <div class="article__intro flex flex-column js-center">
-                                    <h3 class="mb-0 fs-13">academy</h3>
-                                    <p class="ellipsis fs-13">Education:Technology</p>    
+                        <article class="border-bottom pb-20 mb-20 flex-center-between">
+                            <div class="article__content flex-1 gap-10 flex">
+                                <img class="radius-50" src="images/activity-2.webp" alt="academy">
+                                <div class="article__intro pt-5 flex flex-column js-center">
+                                    <h3 class="mb-5 fw-400">academy</h3>
+                                    <p class="title-description m-0">Education:Technology</p>    
                                 </div>
                             </div>
-                            <div>
-                                <span class="block fs-13 fw-700 mb-10 center">08:01</span>
-                                <span class="block fs-12 center">Tuesday</span>
+                            <div class="activities__time mb-10">
+                                <span class="block mb-5 center clr-black">08:01</span>
+                                <span class="title-description">Tuesday</span>
                             </div>
                         </article>
-                        <article class="border-bottom flex-center-between">
-                            <div class="article__content flex-1 flex">
-                                <img class="radius-50 p-10" src="images/activity-3.webp" alt="badges">
-                                <div class="article__intro flex flex-column js-center">
-                                    <h3 class="mb-0 fs-13">Badges</h3>
-                                    <p class="ellipsis fs-13">labels app</p>    
+                        <article class="border-bottom pb-20 mb-20 flex-center-between">
+                            <div class="article__content flex-1 gap-10 flex">
+                                <img class="radius-50" src="images/activity-3.webp" alt="badges">
+                                <div class="article__intro pt-5 flex flex-column js-center">
+                                    <h3 class="mb-5 fw-400">Badges</h3>
+                                    <p class="title-description m-0">labels app</p>    
                                 </div>
                             </div>
-                            <div>
-                                <span class="block fs-13 fw-700 mb-10 center">13:30</span>
-                                <span class="block fs-12 center">Monday</span>
+                            <div class="activities__time mb-10">
+                                <span class="block mb-5 center clr-black">13:30</span>
+                                <span class="title-description">Monday</span>
                             </div>
                         </article>
-                        <article class="border-bottom flex-center-between">
-                            <div class="article__content flex-1 flex">
-                                <img class="radius-50 p-10" src="images/activity-1.webp" alt="store">
-                                <div class="article__intro flex flex-column js-center">
-                                    <h3 class="mb-0 fs-13">Store</h3>
-                                    <p class="ellipsis fs-13">online shopping</p>    
+                        <article class="border-bottom pb-20 mb-20 flex-center-between">
+                            <div class="article__content flex-1 gap-10 flex">
+                                <img class="radius-50" src="images/activity-1.webp" alt="store">
+                                <div class="article__intro pt-5 flex flex-column js-center">
+                                    <h3 class="mb-5 fw-400">Store</h3>
+                                    <p class="title-description m-0">online shopping</p>    
                                 </div>
                             </div>
-                            <div>
-                                <span class="block fs-13 fw-700 mb-10 center">11:30</span>
-                                <span class="block fs-12 center">Sunday</span>
+                            <div class="activities__time mb-10">
+                                <span class="block mb-5 center clr-black">11:30</span>
+                                <span class="title-description">Sunday</span>
                             </div>
                         </article>
                     </div>           

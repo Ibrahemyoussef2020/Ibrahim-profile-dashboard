@@ -1,5 +1,5 @@
 
-@media (max-width:325px){
+@media (max-width:345px){
     body{
         font-size: 14px;
     }
@@ -21,6 +21,24 @@
 
     h2{
         font-size: 1.1rem;
+    }
+
+    .root__header .search-container{
+        width: 130px;
+    }
+    .root__header .me{
+        width: 0;
+    }
+}
+
+@media (max-width:500px){
+    .activities .flex-center-between , .activities .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .activities .article__intro{
+        margin-bottom: 20px;
     }
 }
 
@@ -125,6 +143,17 @@
 
     .profile-cart{
         min-width:220px;
+    }
+
+    /* profiles */
+
+    .profile-informations .flex-center{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .profile-informations ,  .profile-informations * {
+        text-align: start;
     }
 
     /* files */
