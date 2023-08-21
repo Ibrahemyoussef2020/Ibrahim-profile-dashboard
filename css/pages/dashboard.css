@@ -290,6 +290,7 @@
     overflow-x:auto;
 }
 .projects-table table {
+    width: 100%;
     min-width:900px;
     border-spacing: 0;
     color: var(--clr-dark-50);

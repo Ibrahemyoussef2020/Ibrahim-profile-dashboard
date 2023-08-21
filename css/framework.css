@@ -163,6 +163,7 @@ hr{
 
 /*************************** components **********/
 .grid-x-small-boxes{
+    width: 100%;
     margin-left:auto;
     margin-right: auto;
     display: grid;
@@ -173,6 +174,7 @@ hr{
 }
 
 .grid-small-boxes{
+    width: 100%;
     margin-left:auto;
     margin-right: auto;
     display: grid;
@@ -188,6 +190,7 @@ hr{
 }
 
 .grid-medium-boxes{
+    width: 100%;
     margin-left:auto;
     margin-right: auto;
     display: grid;
@@ -196,6 +199,7 @@ hr{
     gap: .63rem 1rem;
 }
 .grid-large-boxes{
+    width: 100%;
     margin-left:auto;
     margin-right: auto;
     display: grid;

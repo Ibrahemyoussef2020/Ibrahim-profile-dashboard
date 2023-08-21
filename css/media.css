@@ -65,7 +65,7 @@
         gap: 15px;
     }
     .grid-small-boxes{
-        grid-template-columns: repeat(auto-fill,minmax(var(--small-box-w),1fr));
+        grid-template-columns: repeat(auto-fit,minmax(var(--small-box-w),1fr));
         gap: 20px;
     }
     .grid-medium-boxes{
@@ -73,7 +73,7 @@
         gap: 15px;
     }
     .grid-large-boxes{
-        grid-template-columns: repeat(auto-fill,minmax(var(--large-box-w),1fr));
+        grid-template-columns: repeat(auto-fit,minmax(var(--large-box-w),1fr));
         gap: 10px;
     }
 
@@ -213,4 +213,15 @@
     .full-md-col{
         grid-column:auto;
     }
+}
+
+@media (min-width:1600px){
+    
+    :root{
+        --x-small-box-w:250px;
+        --small-box-w:300px;
+        --medium-box-w:350px;
+    }
+
+    
 }
