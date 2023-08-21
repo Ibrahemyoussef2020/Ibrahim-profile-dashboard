@@ -24,6 +24,7 @@
     height:120px;
 }
 
+
 .profile-cart__progress{
     height:6px;
     max-width: 70%;
@@ -64,7 +65,7 @@
 
 .profile .custom-toggle  .circle::after{
     top:1.5px;
-    left:2px;
+    left:2.5px;
     font-size: 14px;
 }
 

@@ -36,3 +36,8 @@
     background: var(--clr-light-100);
     border-radius: 100%;
 }
+
+
+.cart__inform i{
+    color: var(--clr-dark-100);
+}

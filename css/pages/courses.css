@@ -7,8 +7,8 @@
 }
 
 .main-courses .cover{
-    min-height:250px;
-    background:#00f;
+    min-height:220px;
+    background:var(--clr-dark-15);
     background-image:url('../../images/covers/course-1.webp');
     background-size: cover;
     background-position: top left;
