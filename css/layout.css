@@ -244,6 +244,9 @@ html::-webkit-scrollbar-thumb,
 
 .boxes-container > article{
     border-radius: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .box{
